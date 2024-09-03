@@ -14,6 +14,9 @@ My research lie at the intersection of **Computer Science** and **Law**, with a 
 
 - **[Aug. 2024]** I started the position of graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
 
-#{% include_relative _includes/publications.md %}
+<!-- 
+{% include_relative _includes/publications.md %}
 
-#{% include_relative _includes/services.md %}
+{% include_relative _includes/services.md %}
+
+-->
