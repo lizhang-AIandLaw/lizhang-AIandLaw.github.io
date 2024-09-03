@@ -4,21 +4,15 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student in the School of Computing and Information[https://www.sci.pitt.edu/] at the University of Pittsburgh[https://www.pitt.edu/].
+I am a Ph.D. student in the [School of Computing and Information](https://www.sci.pitt.edu/) at the [University of Pittsburgh](https://www.pitt.edu/). Previously, I completed my Master in Law at [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm) and my Bachelor in Electronical Engineering at [China University of Mining and Technology](https://global.cumt.edu.cn/). I also spent time at the [Austrlian National University](https://www.anu.edu.au/). My biography is here.
 
 ## Research Interests
 
-My research interests lie at the intersection of Computer Science and Legal Reasoning, with a special focus on the design of intelligence for a legal practitioner.
-
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+My research lie at the intersection of **Computer Science** and **Law**, with a special focus on the design of intelligence for legal practitioners. My research interests include **text classification**, **legal reasoning**, **case summarization** and **factors extraction**.
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[Aug. 2024]** I started as a graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
 
 {% include_relative _includes/publications.md %}
 
