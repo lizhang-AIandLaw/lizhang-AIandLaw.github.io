@@ -8,11 +8,11 @@ I am a Ph.D. student in the [School of Computing and Information](https://www.sc
 
 ## Research Interests
 
-My research lie at the intersection of **Computer Science** and **Law**, with a special focus on the design of intelligence for legal practitioners. My research interests include **text classification**, **legal reasoning**, **case summarization** and **factors extraction**.
+My research lie at the intersection of **Computer Science** and **Law**, with a special focus on the design of intelligence for legal practitioners. My research interests include **text classification**, **legal reasoning**, **case summarization** and **factor extraction**.
 
 ## News
 
-- **[Aug. 2024]** I started as a graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
+- **[Aug. 2024]** I started the position of graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
 
 {% include_relative _includes/publications.md %}
 
