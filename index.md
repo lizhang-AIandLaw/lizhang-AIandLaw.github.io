@@ -4,9 +4,11 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a Ph.D. student in the School of Computing and Information[https://www.sci.pitt.edu/] at the University of Pittsburgh[https://www.pitt.edu/].
 
 ## Research Interests
+
+My research interests lie at the intersection of Computer Science and Legal Reasoning, with a special focus on the design of intelligence for a legal practitioner.
 
 - **Computer Vision:** image recognition, image generation, video captioning
 - **Machine Learning:** meta-learning, incremental learning, transfer learning
