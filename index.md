@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student in the [School of Computing and Information](https://www.sci.pitt.edu/) at the [University of Pittsburgh](https://www.pitt.edu/), advised by [Prof. Kevin Ashley](https://www.isp.pitt.edu/people/kevin-ashley). Previously, I completed my Master in Law at [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm) and my Bachelor in Electronical Engineering at [China University of Mining and Technology](https://global.cumt.edu.cn/). I also spent time at the [Austrlian National University](https://www.anu.edu.au/). My biography is here.
+I am a Ph.D. student in the [School of Computing and Information](https://www.sci.pitt.edu/) at the [University of Pittsburgh](https://www.pitt.edu/), advised by [Prof. Kevin Ashley](https://www.isp.pitt.edu/people/kevin-ashley). Previously, I completed my Master in Law at [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm) and my Bachelor in Electronical Engineering at [China University of Mining and Technology](https://global.cumt.edu.cn/). I also spent time at the [Austrlian National University](https://www.anu.edu.au/). My biography is [here](assets/files/curriculum_vitae.pdf).
 
 ## Research Interests
 
