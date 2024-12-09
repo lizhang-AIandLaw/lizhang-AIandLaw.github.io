@@ -11,7 +11,7 @@ I am a Ph.D. student in the [School of Computing and Information](https://www.sc
 My research lie at the intersection of **Computer Science** and **Law**, with a special focus on the design of intelligence for legal practitioners. My research interests include **text classification**, **legal reasoning**, **case summarization** and **factor extraction**.
 
 ## News
-
+- **[Dec. 2024]** Really excited about our newly-accepted [CS&Law 2025](https://computersciencelaw.org/2025/) paper: Generating Case-Based Legal Arguments with LLMs.
 - **[Aug. 2024]** I started the position of graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
 
 <!-- 
