@@ -8,14 +8,14 @@ I am a Ph.D. student in the [School of Computing and Information](https://www.sc
 
 ## Research Interests
 
-My research interests include **LLM-based legal reasoning**, **Trustworthy AI** and **Argumentation Mining**. My research explores the intersection of **Computer Science** and **Law**, where I design intelligent systems with dual purpose:
+My research interests include **LLM-based Legal Reasoning**, **Trustworthy AI** and **Argumentation Mining**. My research explores the intersection of **Computer Science** and **Law**, where I design intelligent systems with dual purpose:
 
 (1) For **legal practitioners**, I develop computational tools that leverage large foundation models to enhance legal reasoning, case analysis, and document review. 
 
 (2) For **laypeople**, I create interfaces that transform complex legal knowledge into intuitive and actionable insights.
 
 ## News
-- **[Dec. 2024]** Really excited about our newly-accepted [CS&Law 2025](https://computersciencelaw.org/2025/) paper: Generating Case-Based Legal Arguments with LLMs(link will be up soon).
+- **[Mar. 2025]** Really excited about our newly-accepted [CS&Law 2025](https://computersciencelaw.org/2025/) paper: [Generating Case-Based Legal Arguments with LLMs](https://dl.acm.org/doi/10.1145/3709025.3712216).
 - **[Aug. 2024]** I started the position of graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
 
 <!-- 
