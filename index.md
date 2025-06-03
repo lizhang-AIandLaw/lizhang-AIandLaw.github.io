@@ -15,6 +15,7 @@ My research interests include **LLM-based Legal Reasoning**, **Trustworthy AI** 
 (2) For **laypeople**, I create interfaces that transform complex legal knowledge into intuitive and actionable insights.
 
 ## News
+- **[May. 2025]** Our paper [Measuring Faithfulness and Abstention: An Automated Pipeline for Evaluating LLM-Generated 3-ply Case-Based Legal Arguments](https://arxiv.org/abs/2506.00694) is accepted by [ASAIL@ICAIL 2025](https://sites.google.com/view/asail/asail-home).
 - **[Mar. 2025]** Really excited about our newly-accepted [CS&Law 2025](https://computersciencelaw.org/2025/) paper: [Generating Case-Based Legal Arguments with LLMs](https://dl.acm.org/doi/10.1145/3709025.3712216).
 - **[Aug. 2024]** I started the position of graduate student researcher at the [Learning and Research Development Centre](https://www.lrdc.pitt.edu/) of University of Pittsburgh.
 
