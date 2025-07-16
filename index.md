@@ -15,6 +15,7 @@ My research interests include **LLM-based Legal Reasoning**, **Trustworthy AI** 
 (2) For **laypeople**, I create interfaces that transform complex legal knowledge into intuitive and actionable insights.
 
 ## News
+- **[July. 2025]** I will be giving an invited talk at [ResearchTrend](https://researchtrend.ai).
 - **[June. 2025]** Our paper [Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation](https://lizhang-aiandlaw.github.io/A-Reflective-Multi-Agent-Approach-for-Legal-Argument-Generation/) is accepted by [LCIC@ICAIL 2025](https://site.unibo.it/compulaw/en/project/open-calls). I will be presenting the papers at the conference.
 - **[May. 2025]** Our paper [Measuring Faithfulness and Abstention: An Automated Pipeline for Evaluating LLM-Generated 3-ply Case-Based Legal Arguments](https://lizhang-aiandlaw.github.io/An-Automated-Pipeline-for-Evaluating-LLM-Generated-3-ply-Case-Based-Legal-Arguments/) is accepted by [ASAIL@ICAIL 2025](https://sites.google.com/view/asail/asail-home).
 - **[Mar. 2025]** Really excited about our newly-accepted [CS&Law 2025](https://computersciencelaw.org/2025/) paper: [Generating Case-Based Legal Arguments with LLMs](https://dl.acm.org/doi/10.1145/3709025.3712216).
