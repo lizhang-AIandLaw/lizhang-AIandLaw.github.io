@@ -8,7 +8,7 @@ I am a Ph.D. student in the [School of Computing and Information](https://www.sc
 
 ## Research Interests
 
-My research interests include **LLM-based Legal Reasoning**, **Trustworthy AI** and **Argumentation Mining**. My research explores the intersection of **Computer Science** and **Law**, where I design intelligent systems with dual purpose:
+My research interests include **Reasoning LLMs**, **Trustworthy ML Systems**, and **AI for Law**. My research explores the intersection of **Computer Science** and **Law**, where I design intelligent systems with dual purpose:
 
 (1) For **legal practitioners**, I develop computational tools that leverage large foundation models to enhance legal reasoning, case analysis, and document review. 
 
