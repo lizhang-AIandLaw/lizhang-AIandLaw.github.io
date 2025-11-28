@@ -15,8 +15,9 @@ My research interests include **Reasoning LLMs**, **Trustworthy ML Systems**, an
 (2) For **laypeople**, I create interfaces that transform complex legal knowledge into intuitive and actionable insights.
 
 ## News
-- **[Oct. 2025]** Our paper [Thinking Longer, Not Always Smarter: Evaluating LLM Capabilities in Hierarchical Legal Reasoning](https://thinking-longer-thinking-smarter.vercel.app) is on ArXiv now.
-- **[Oct. 2025]** Our paper [Do LLMs Truly Understand When a Precedent Is Overruled?](https://arxiv.org/abs/2510.20941) is accepted by [JURIX 2025](https://jurix2025.di.unito.it).
+- **[Nov. 2025]** I will be giving an invited talk at [2025 Pittsburgh Legal AI Summit](https://luma.com/c2t58h8z) at Carnegie Mellon University.
+- [Oct. 2025] Our paper [Thinking Longer, Not Always Smarter: Evaluating LLM Capabilities in Hierarchical Legal Reasoning](https://thinking-longer-thinking-smarter.vercel.app) is on ArXiv now.
+- [Oct. 2025] Our paper [Do LLMs Truly Understand When a Precedent Is Overruled?](https://arxiv.org/abs/2510.20941) is accepted by [JURIX 2025](https://jurix2025.di.unito.it).
 - [July. 2025] I will be giving an invited talk at [ResearchTrend](https://researchtrend.ai/social-events/researchtrend-connect-llmag-8).
 - [June. 2025] Our paper [Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation](https://lizhang-aiandlaw.github.io/A-Reflective-Multi-Agent-Approach-for-Legal-Argument-Generation/) is accepted by [LCIC@ICAIL 2025](https://site.unibo.it/compulaw/en/project/open-calls). I will be presenting the papers at the conference.
 - [May. 2025] Our paper [Measuring Faithfulness and Abstention: An Automated Pipeline for Evaluating LLM-Generated 3-ply Case-Based Legal Arguments](https://lizhang-aiandlaw.github.io/An-Automated-Pipeline-for-Evaluating-LLM-Generated-3-ply-Case-Based-Legal-Arguments/) is accepted by [ASAIL@ICAIL 2025](https://sites.google.com/view/asail/asail-home).
