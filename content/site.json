@@ -46,8 +46,11 @@
   "contact": {
     "email": "liz239@pitt.edu",
     "academicEmail": "liz239@pitt.edu",
+    "hiringEmail": "",
     "location": "Pittsburgh, PA"
   },
+
+  "pets": [],
 
   "social": {
     "github": "https://github.com/lizhang-AIandLaw",
