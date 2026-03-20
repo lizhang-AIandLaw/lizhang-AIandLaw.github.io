@@ -26,6 +26,36 @@
   "reviewing": [],
   "timeline": [
     {
+      "title": "Legal Intern, Capital Market",
+      "company": "Zhonglun Law Firm",
+      "location": "Beijing, China",
+      "start": "2022-01-01",
+      "end": "2022-05-31",
+      "category": "industry",
+      "roleType": "legal",
+      "summary": "Supported capital-markets matters involving IPOs, legal due diligence, and securities-law research.",
+      "highlights": [
+        "Assisted the legal team in advising major corporate clients on IPOs across domestic and international exchanges",
+        "Conducted legal due diligence on corporate governance structures and material contracts to identify potential liabilities",
+        "Drafted prospectus sections and legal opinions while researching securities laws and regulatory inquiries"
+      ]
+    },
+    {
+      "title": "Legal Intern, Private Equity",
+      "company": "King & Wood Mallesons",
+      "location": "Beijing, China",
+      "start": "2020-11-01",
+      "end": "2021-03-31",
+      "category": "industry",
+      "roleType": "legal",
+      "summary": "Worked on private-equity and M&A matters, including transaction documents and closing coordination.",
+      "highlights": [
+        "Supported private equity funds and portfolio companies through investment and M&A transactions",
+        "Reviewed and revised Share Purchase Agreements and Shareholders' Agreements to align with client objectives",
+        "Assisted transaction closings by managing checklists, coordinating signature pages, and organizing closing binders"
+      ]
+    },
+    {
       "title": "Legal Counselor",
       "company": "The Export-Import Bank of China",
       "companyUrl": "https://www.eximbank.gov.cn/",
