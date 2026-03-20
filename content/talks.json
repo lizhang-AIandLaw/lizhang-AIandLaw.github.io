@@ -1,20 +1,29 @@
 [
   {
-    "title": "Invited Talk",
+    "title": "Do LLMs Truly Understand When a Precedent Is Overruled",
     "event": "2025 Pittsburgh Legal AI Summit",
     "date": "Nov 2025",
     "location": "Carnegie Mellon University, Pittsburgh, PA",
     "type": "invited",
-    "description": "Invited talk at the Pittsburgh Legal AI Summit.",
+    "description": "Presented the overruling benchmark and findings at the Pittsburgh Legal AI Summit.",
     "slidesUrl": ""
   },
   {
-    "title": "Invited Talk",
-    "event": "ResearchTrend Connect LLMAG-8",
+    "title": "Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation",
+    "event": "ResearchTrend.AI",
     "date": "Jul 2025",
     "location": "Virtual",
     "type": "invited",
-    "description": "Invited talk at ResearchTrend.",
+    "description": "Invited talk on reflective multi-agent systems for legal argument generation.",
+    "slidesUrl": ""
+  },
+  {
+    "title": "Enhancing Legal Argument Generation: From Basic Schemes to Trustworthy Multi-Agent Systems",
+    "event": "ISP Forum",
+    "date": "Mar 21, 2025",
+    "location": "University of Pittsburgh, Pittsburgh, PA",
+    "type": "invited",
+    "description": "Forum talk on the progression from foundational legal argument generation to trustworthy multi-agent systems.",
     "slidesUrl": ""
   }
 ]

@@ -30,8 +30,8 @@
     "badge": "Talk",
     "icon": "FaMicrophone",
     "iconColor": "purple.400",
-    "title": "Invited talk at 2025 Pittsburgh Legal AI Summit",
-    "description": "Gave an invited talk at the 2025 Pittsburgh Legal AI Summit at Carnegie Mellon University.",
+    "title": "Talk at 2025 Pittsburgh Legal AI Summit",
+    "description": "Presented \"Do LLMs Truly Understand When a Precedent Is Overruled?\" at Carnegie Mellon University.",
     "date": "Nov 2025",
     "sortDate": "2025-11-01",
     "links": [
@@ -56,8 +56,8 @@
     "badge": "Talk",
     "icon": "FaMicrophone",
     "iconColor": "purple.400",
-    "title": "Invited talk at ResearchTrend",
-    "description": "Gave an invited talk at ResearchTrend Connect LLMAG-8.",
+    "title": "Talk at ResearchTrend.AI",
+    "description": "Presented \"Mitigating Manipulation and Enhancing Persuasion\" at ResearchTrend Connect LLMAG-8.",
     "date": "Jul 2025",
     "sortDate": "2025-07-01",
     "links": [
@@ -69,12 +69,25 @@
     "badge": "Publication",
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
-    "title": "Paper accepted at LCIC@ICAIL 2025",
-    "description": "Our paper \"Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation\" is accepted by LCIC@ICAIL 2025.",
+    "title": "Paper published at ICAIL 2025",
+    "description": "Our paper \"Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation\" appears at ICAIL 2025.",
     "date": "Jun 2025",
     "sortDate": "2025-06-01",
     "links": [
       { "text": "Paper", "url": "https://lizhang-aiandlaw.github.io/A-Reflective-Multi-Agent-Approach-for-Legal-Argument-Generation/", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "talk",
+    "badge": "Talk",
+    "icon": "FaMicrophone",
+    "iconColor": "purple.400",
+    "title": "Talk at ISP Forum",
+    "description": "Presented \"Enhancing Legal Argument Generation: From Basic Schemes to Trustworthy Multi-Agent Systems\" at the University of Pittsburgh.",
+    "date": "Mar 2025",
+    "sortDate": "2025-03-21",
+    "links": [
+      { "text": "Event", "url": "https://calendar.pitt.edu/event/isp-forum-hang-zhang-li-zhang", "icon": "FaLink" }
     ]
   }
 ]

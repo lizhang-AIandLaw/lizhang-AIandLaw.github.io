@@ -2,19 +2,24 @@
   "education": {
     "courses": [
       {
-        "course": "Ph.D. in Computer Science",
+        "course": "Doctor of Philosophy in Intelligent Systems",
         "institution": "University of Pittsburgh",
-        "year": "2024-Present"
+        "year": "Aug. 2024 - Apr. 2029"
       },
       {
-        "course": "LL.M. (Master of Laws)",
+        "course": "Master of Computational Law",
         "institution": "Tsinghua University",
-        "year": "2019-2022"
+        "year": "Sep. 2019 - Jun. 2022"
       },
       {
-        "course": "B.S. in Electrical Engineering",
+        "course": "Study Abroad in College of Engineering and Computer Science",
+        "institution": "Australian National University",
+        "year": "Jul. 2017 - Dec. 2017"
+      },
+      {
+        "course": "Bachelor of Electrical Engineering",
         "institution": "China University of Mining and Technology",
-        "year": "2014-2018"
+        "year": "Sep. 2015 - Jun. 2019"
       }
     ]
   },
@@ -37,7 +42,7 @@
       ]
     },
     {
-      "title": "Ph.D. Student",
+      "title": "Ph.D. Student in Intelligent Systems",
       "company": "University of Pittsburgh",
       "companyUrl": "https://www.sci.pitt.edu/",
       "location": "Pittsburgh, PA",
@@ -45,11 +50,11 @@
       "category": "research",
       "roleType": "research",
       "isCurrent": true,
-      "summary": "Researching AI for Law under the supervision of Prof. Kevin Ashley.",
+      "summary": "Researching AI and Law in the Intelligent Systems program under the supervision of Prof. Kevin Ashley.",
       "highlights": [
-        "Research on reasoning LLMs for legal applications",
-        "Developing trustworthy ML systems for legal reasoning",
-        "Building computational tools for legal practitioners"
+        "Evaluating hierarchical legal reasoning capabilities in large language models",
+        "Designing trustworthy multi-agent systems for legal argument generation",
+        "Benchmarking long-context understanding and temporal logic in legal corpora"
       ]
     }
   ]

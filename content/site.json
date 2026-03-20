@@ -18,27 +18,29 @@
   },
 
   "title": "Hi, I'm Li Zhang",
-  "tagline": "Ph.D. Student researching the intersection of AI and Law at the University of Pittsburgh.",
+  "tagline": "Ph.D. student in Intelligent Systems at the University of Pittsburgh, researching AI and Law.",
   "avatar": "avatar.png",
 
   "terminal": {
     "username": "lizhang",
     "rotatingSubtitles": [
-      "reasoning with LLMs",
-      "building trustworthy ML systems",
-      "AI for legal reasoning",
-      "bridging CS and law",
-      "evaluating legal AI"
+      "designing intelligent systems for law",
+      "evaluating legal reasoning with LLMs",
+      "building trustworthy multi-agent systems",
+      "studying long-context legal reasoning",
+      "bridging AI research and legal practice"
     ],
     "skills": [
-      { "name": "Reasoning LLMs", "icon": "FaBrain" },
-      { "name": "Trustworthy ML", "icon": "FaShieldAlt" },
-      { "name": "AI for Law", "icon": "FaBalanceScale" },
-      { "name": "NLP", "icon": "FaLanguage" },
-      { "name": "Legal Reasoning", "icon": "FaGavel" },
+      { "name": "Intelligent Systems", "icon": "FaBrain" },
+      { "name": "AI and Law", "icon": "FaBalanceScale" },
+      { "name": "Reasoning LLMs", "icon": "FaRobot" },
       { "name": "Python", "icon": "FaPython" },
-      { "name": "Deep Learning", "icon": "FaNetworkWired" },
-      { "name": "Research", "icon": "FaFlask" }
+      { "name": "SQL", "icon": "FaDatabase" },
+      { "name": "JavaScript", "icon": "FaCode" },
+      { "name": "SageMaker", "icon": "FaCloud" },
+      { "name": "DynamoDB", "icon": "FaServer" },
+      { "name": "PRC Legal Qualification", "icon": "FaGavel" },
+      { "name": "LaTeX", "icon": "FaFileAlt" }
     ],
     "timezone": "America/New_York"
   },
@@ -81,5 +83,5 @@
     { "platform": "linkedin", "icon": "FaLinkedin", "label": "LinkedIn", "color": "#0077B5" }
   ],
 
-  "selectedPublicationIds": ["jurix2025-overruled", "cslaw2026-thinking-longer", "lcic2025-legal-argument"]
+  "selectedPublicationIds": ["jurix2025-overruled", "cslaw2026-thinking-longer", "icail2025-faithfulness-abstention"]
 }
