@@ -1,0 +1,80 @@
+[
+  {
+    "type": "award",
+    "badge": "Award",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "JURIX 2025 Best Student Paper Award",
+    "description": "Our JURIX 2025 paper \"Do LLMs Truly Understand When a Precedent Is Overruled?\" received the Best Student Paper Award.",
+    "date": "Dec 2025",
+    "sortDate": "2025-12-15",
+    "links": [
+      { "text": "Paper", "url": "https://ebooks.iospress.nl/volumearticle/76899", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Paper accepted at CS&Law 2026",
+    "description": "Our paper \"Thinking Longer, Not Always Smarter: Evaluating LLM Capabilities in Hierarchical Legal Reasoning\" is accepted by CS&Law 2026.",
+    "date": "Dec 2025",
+    "sortDate": "2025-12-01",
+    "links": [
+      { "text": "Paper", "url": "https://thinking-longer-thinking-smarter.vercel.app", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "talk",
+    "badge": "Talk",
+    "icon": "FaMicrophone",
+    "iconColor": "purple.400",
+    "title": "Invited talk at 2025 Pittsburgh Legal AI Summit",
+    "description": "Gave an invited talk at the 2025 Pittsburgh Legal AI Summit at Carnegie Mellon University.",
+    "date": "Nov 2025",
+    "sortDate": "2025-11-01",
+    "links": [
+      { "text": "Event", "url": "https://luma.com/c2t58h8z", "icon": "FaLink" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Paper accepted at JURIX 2025",
+    "description": "Our paper \"Do LLMs Truly Understand When a Precedent Is Overruled?\" is accepted by JURIX 2025.",
+    "date": "Oct 2025",
+    "sortDate": "2025-10-15",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/abs/2510.20941", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "talk",
+    "badge": "Talk",
+    "icon": "FaMicrophone",
+    "iconColor": "purple.400",
+    "title": "Invited talk at ResearchTrend",
+    "description": "Gave an invited talk at ResearchTrend Connect LLMAG-8.",
+    "date": "Jul 2025",
+    "sortDate": "2025-07-01",
+    "links": [
+      { "text": "Event", "url": "https://researchtrend.ai/social-events/researchtrend-connect-llmag-8", "icon": "FaLink" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Paper accepted at LCIC@ICAIL 2025",
+    "description": "Our paper \"Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation\" is accepted by LCIC@ICAIL 2025.",
+    "date": "Jun 2025",
+    "sortDate": "2025-06-01",
+    "links": [
+      { "text": "Paper", "url": "https://lizhang-aiandlaw.github.io/A-Reflective-Multi-Agent-Approach-for-Legal-Argument-Generation/", "icon": "FaFilePdf" }
+    ]
+  }
+]
