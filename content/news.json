@@ -1,5 +1,18 @@
 [
   {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "PLawBench released on arXiv",
+    "description": "Our paper \"PLawBench: A Rubric-Based Benchmark for Evaluating LLMs in Real-World Legal Practice\" is now available on arXiv.",
+    "date": "Jan 2026",
+    "sortDate": "2026-01-24",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/abs/2601.16669", "icon": "FaFilePdf" }
+    ]
+  },
+  {
     "type": "award",
     "badge": "Award",
     "icon": "FaTrophy",
