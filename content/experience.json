@@ -2,9 +2,9 @@
   "education": {
     "courses": [
       {
-        "course": "Ph.D. in Information Science",
+        "course": "Ph.D. in Computer Science",
         "institution": "University of Pittsburgh",
-        "year": "2022-Present"
+        "year": "2024-Present"
       },
       {
         "course": "LL.M. (Master of Laws)",
@@ -21,11 +21,27 @@
   "reviewing": [],
   "timeline": [
     {
+      "title": "Legal Counselor",
+      "company": "The Export-Import Bank of China",
+      "companyUrl": "https://www.eximbank.gov.cn/",
+      "location": "Nanjing, China",
+      "start": "2022-06-01",
+      "end": "2024-06-30",
+      "category": "industry",
+      "roleType": "legal",
+      "summary": "Led legal support for banking transactions, cross-border financing, and institutional risk management.",
+      "highlights": [
+        "Spearheaded legal negotiations for complex banking transactions with strict regulatory compliance requirements",
+        "Drafted and reviewed credit facility agreements and security documents for cross-border financing matters",
+        "Advised internal stakeholders on operational risks, dispute resolution strategy, and legal safeguards"
+      ]
+    },
+    {
       "title": "Ph.D. Student",
       "company": "University of Pittsburgh",
       "companyUrl": "https://www.sci.pitt.edu/",
       "location": "Pittsburgh, PA",
-      "start": "2022-08-01",
+      "start": "2024-08-01",
       "category": "research",
       "roleType": "research",
       "isCurrent": true,

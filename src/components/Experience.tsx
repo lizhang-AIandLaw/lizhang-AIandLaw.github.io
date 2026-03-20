@@ -28,6 +28,7 @@ const roleTypeConfig: Record<RoleType, { labelKey: string; color: (dk: boolean) 
   sde:        { labelKey: 'experience.roleSDE',        color: dk => dk ? '#d08770' : '#b35a2e' },
   teaching:   { labelKey: 'experience.roleTeaching',   color: dk => dk ? '#a3be8c' : '#34744e' },
   leadership: { labelKey: 'experience.roleLeadership', color: dk => dk ? '#ebcb8b' : '#c47d46' },
+  legal:      { labelKey: 'experience.roleLegal',      color: dk => dk ? '#81a1c1' : '#315a8a' },
 }
 
 /* ── Logos helper ────────────────────────────────────────────── */

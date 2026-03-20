@@ -65,7 +65,7 @@ export interface Experience {
 }
 
 export type ExperienceCategory = 'research' | 'industry' | 'academic' | 'leadership'
-export type RoleType = 'research' | 'mle' | 'sde' | 'teaching' | 'leadership'
+export type RoleType = 'research' | 'mle' | 'sde' | 'teaching' | 'leadership' | 'legal'
 
 export interface ExperienceEntry {
   title: string
