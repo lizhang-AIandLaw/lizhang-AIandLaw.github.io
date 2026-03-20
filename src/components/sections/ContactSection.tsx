@@ -2,6 +2,7 @@ import { Box, Container, VStack, HStack, Text, Heading, Flex, Link, useColorMode
 import { useTranslation } from 'react-i18next'
 import { useLocalizedData } from '@/hooks/useLocalizedData'
 import DynamicIcon from '../DynamicIcon'
+import { withBase } from '@/utils/asset'
 
 const ContactSection: React.FC = () => {
   const { t } = useTranslation()
@@ -12,6 +13,7 @@ const ContactSection: React.FC = () => {
   const items = [
     siteOwner.contact.email && { icon: 'FaEnvelope', label: t('contact.email', 'Email'), value: siteOwner.contact.email, href: `mailto:${siteOwner.contact.email}` },
     siteOwner.contact.academicEmail && { icon: 'FaGraduationCap', label: t('contact.academicEmail', 'Academic'), value: siteOwner.contact.academicEmail, href: `mailto:${siteOwner.contact.academicEmail}` },
+    siteOwner.social.cv && { icon: 'FaFileAlt', label: 'CV', value: 'LiZhangCV2026.pdf', href: withBase(siteOwner.social.cv) },
     siteOwner.contact.location && { icon: 'FaMapMarkerAlt', label: t('contact.location', 'Location'), value: siteOwner.contact.location },
     siteOwner.social.github && { icon: 'FaGithub', label: 'GitHub', value: siteOwner.social.github, href: siteOwner.social.github },
     siteOwner.social.linkedin && { icon: 'FaLinkedin', label: 'LinkedIn', value: 'LinkedIn', href: siteOwner.social.linkedin },

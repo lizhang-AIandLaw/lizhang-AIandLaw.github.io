@@ -5,10 +5,11 @@ import {
 } from '@chakra-ui/react'
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { Link, useLocation } from 'react-router-dom'
-import { FaGithub, FaLinkedin, FaMedium, FaEnvelope } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaFileAlt } from 'react-icons/fa'
 import { SiGooglescholar } from 'react-icons/si'
 import { useTranslation } from 'react-i18next'
 import { navItems, siteOwner } from '@/site.config'
+import { withBase } from '@/utils/asset'
 
 const Navbar: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode()
@@ -18,6 +19,7 @@ const Navbar: React.FC = () => {
 
   const socialLinks = [
     { icon: FaEnvelope, href: `mailto:${siteOwner.contact.email}`, label: 'Email' },
+    { icon: FaFileAlt, href: withBase(siteOwner.social.cv), label: 'CV' },
     { icon: FaGithub, href: siteOwner.social.github, label: 'GitHub' },
     { icon: FaLinkedin, href: siteOwner.social.linkedin, label: 'LinkedIn' },
     { icon: FaMedium, href: siteOwner.social.medium, label: 'Medium' },

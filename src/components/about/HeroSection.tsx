@@ -239,6 +239,13 @@ const HeroSection = ({ title, avatar, research = [], researchLogos = {}, educati
                     <Text fontSize="xs" fontFamily="mono">linkedin</Text>
                   </HStack>
                 </Link>
+                <Text color={textColor} opacity={0.2}>/</Text>
+                <Link href={withBase(siteOwner.social.cv)} isExternal _hover={{ textDecoration: 'none' }}>
+                  <HStack spacing={1.5} color={textColor} transition="all 0.15s" _hover={{ color: 'cyan.400' }}>
+                    <DynamicIcon name="FaFileAlt" boxSize={3.5} />
+                    <Text fontSize="xs" fontFamily="mono">cv</Text>
+                  </HStack>
+                </Link>
               </HStack>
             </Flex>
           </VStack>
