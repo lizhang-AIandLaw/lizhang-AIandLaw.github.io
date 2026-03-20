@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Invited Talk",
+    "event": "2025 Pittsburgh Legal AI Summit",
+    "date": "Nov 2025",
+    "location": "Carnegie Mellon University, Pittsburgh, PA",
+    "type": "invited",
+    "description": "Invited talk at the Pittsburgh Legal AI Summit.",
+    "slidesUrl": ""
+  },
+  {
+    "title": "Invited Talk",
+    "event": "ResearchTrend Connect LLMAG-8",
+    "date": "Jul 2025",
+    "location": "Virtual",
+    "type": "invited",
+    "description": "Invited talk at ResearchTrend.",
+    "slidesUrl": ""
+  }
+]

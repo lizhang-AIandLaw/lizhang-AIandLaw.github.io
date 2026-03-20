@@ -1,185 +1,254 @@
-# The Minimal Light Theme
+<!--
+SPDX-FileCopyrightText: 2026 Yaoyao(Freax) Qian <limyoonaxi@gmail.com>
+SPDX-License-Identifier: GPL-3.0-only
+-->
 
-[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
+<p align="right">
+  <a href="README.md">English</a> | <a href="README_CN.md">中文</a>
+</p>
 
-\[[Demo the theme](https://minimal-light-theme.yliu.me/)\]  \[[简体中文](https://github.com/yaoyao-liu/minimal-light/blob/master/README_zh_Hans.md) | [繁體中文](https://github.com/yaoyao-liu/minimal-light/blob/master/README_zh_Hant.md) | [Deutsche](https://github.com/yaoyao-liu/minimal-light/blob/master/README_de.md)\]
- 
-*This is the source code of my homepage. I build this website based on [minimal](https://github.com/orderedlist/minimal).*
-<br>
-*Feel free to use and share the source code anywhere you like.*
+<p align="center">
+  <img src="public/logo.svg" alt="TermHub" width="520" />
+</p>
 
-The latest version of my homepage is available here: [[link](https://github.com/yaoyao-liu/yaoyao-liu.github.io)]
+<p align="center">
+  <strong>Your Resume In. Portfolio Out.</strong><br/>
+  <sub>Terminal-themed portfolio for developers, researchers, and creatives. Edit text files or let AI do it via MCP.</sub>
+</p>
+
+<p align="center">
+  <a href="https://term-hub.vercel.app/"><img src="https://img.shields.io/badge/Live_Demo-88c0d0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
+  <a href="https://h-freax.github.io/"><img src="https://img.shields.io/badge/Author's_Site-b48ead?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="Author's Site" /></a>
+  <a href="https://term-hub.vercel.app/guide"><img src="https://img.shields.io/badge/Documentation-5e81ac?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Docs" /></a>
+  <a href="https://discord.gg/QV2kyXzaTa"><img src="https://img.shields.io/badge/Discord-7289da?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
+
+<p align="center">
+  <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPL_v3-a3be8c?style=flat-square" alt="License" /></a>
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Chakra_UI-319795?style=flat-square&logo=chakraui&logoColor=white" alt="Chakra UI" />
+  <a href="#ai-integration--supports-mcp"><img src="https://img.shields.io/badge/NEW-Supports_MCP-bf616a?style=flat-square&logo=openai&logoColor=white" alt="Supports MCP" /></a>
+</p>
+
+---
+
+> [!TIP]
+> **Don't want to touch code?** We're building a hosted solution at **[termhubai.com](https://termhubai.com)** — upload your resume and get a live portfolio, no Git or terminal needed. **Join the waitlist** to get early access!
+
+<br/>
+
+## Demo
+
+<p align="center">
+  <a href="https://h-freax.github.io/">
+    <img src="public/screenshots/home.png" alt="TermHub — Author's Portfolio" width="720" />
+  </a>
+  <br/>
+  <sub><a href="https://h-freax.github.io/">h-freax.github.io</a> — the author's real portfolio, built with TermHub</sub>
+</p>
+
+<p align="center">
+  <a href="https://term-hub.vercel.app/">Cookie's Demo</a> · <a href="https://h-freax.github.io/">Author's Portfolio</a>
+</p>
+
+<details>
+<summary>View all pages</summary>
+
+<br/>
+
+**Publications**
+
+<img src="public/screenshots/publications.png" alt="Publications" width="720" />
+
+**Projects**
+
+<img src="public/screenshots/projects.png" alt="Projects" width="720" />
+
+**Experience**
+
+<img src="public/screenshots/experience.png" alt="Experience" width="720" />
+
+**Articles**
+
+<img src="public/screenshots/articles.png" alt="Articles" width="720" />
+
+**Awards** · **My Journey**
+
+<img src="public/screenshots/award.png" alt="Awards" width="360" /> <img src="public/screenshots/myjourney.png" alt="My Journey" width="360" />
+
+**Selected Publications** · **Recent Updates**
+
+<img src="public/screenshots/selectedpublications.png" alt="Selected Publications" width="360" /> <img src="public/screenshots/recentupdates.png" alt="Recent Updates" width="360" />
+
+</details>
+
+<br/>
+
+## Design Philosophy
+
+TermHub is built around one simple idea: **CV → AI → Markdown → Homepage**
+
+Instead of writing HTML or learning a framework, you give your CV to any AI — **ChatGPT, Claude, Gemini, or any LLM** — and it generates Markdown files that plug directly into TermHub. Works for developers, researchers, designers, students — anyone who wants a professional portfolio. With our **built-in MCP server**, Claude can do this fully automatically: read your resume, call 19 specialized tools, and populate your entire site in under a minute.
+
+<br/>
 
 ## Features
 
-- Simple and elegant personal homepage theme
-- Jekyll theme, automatically deployed by GitHub Pages
-- Basic search engine optimization
-- Mobile friendly
-- Supporting Markdown 
-- Supporting dark mode
+- Terminal aesthetic with **Nord** color palette, dark / light mode
+- Fully **responsive** (mobile → desktop), hot reload on edit
+- **No code needed** — just edit text files in `content/`
+- **MCP-powered** — resume → AI → portfolio in minutes
+- **i18n** — built-in English / Chinese bilingual support
 
-## Project Architecture
+**Content types:** Publications · Projects · Experience · Articles · Awards · News
 
-```
-.
-├── _data                    
-|   └── publications.yml                      # the YAML file for publications
-├── _includes                    
-|   ├── publications.md                       # the Markdown file for publications
-|   └── services.md                           # the Markdown file for services
-├── _layouts                  
-|   └── homepage.html                         #  the html template for the homepage 
-├── _sass
-|   ├── minimal-light.scss                    #  this file will be compiled into a CSS file to control the style of the page              
-|   └── minimal-light-no-dark-mode.scss       #  this file is similar to minimal-light.scss with the dark mode disabled
-├── assets                                    #  some files
-├── html_source_file                          #  compiled HTML files
-├── .gitignore                                #  this file specifies intentionally untracked files that Git should ignore
-├── CNAME                                     #  the custom domain, will be used by GitHub page sevice
-├── Gemfile                                   #  a RubyGems related file
-├── LICENSE                                   #  the license file
-├── README.md                                 #  the readme file (English)
-├── README_de.md                              #  the readme file (German)
-├── README_zh_Hans.md                         #  the readme file (Simplified Chinese)
-├── README_zh_Hant.md                         #  the readme file (Traditional Chinese)
-├── _config.yml                               #  the Jekyll configuration file, including some options of the page  
-└── index.md                                  #  the content of the index page, using Markdown
-```
+<br/>
 
-## Getting Started
-
-This template can be used in the following two ways: 
-- **Using with the GitHub Pages Service.** GitHub will provide you with a server to generate and host web pages.
-- **Using locally with Jekyll.** You may install Jekyll on your own computer and generate static web pages (i.e., HTML files) with this template. After that, you may upload the HTML files to your server.
-
-The detailed instructions are available below.
-
-
-### Using with the GitHub Pages Service
-
-There are two ways to use this template on GitHub:
-
-#### Fork this repository
-- Fork this repository (or [use this repository as a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)) and change the name to `your-username.github.io`.
-
-- Enable the GitHub pages for that repository following the steps [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
-
-#### Using this repository as a remote theme
-To use this theme, add the following to your repository's `_config.yml`:
-
-```yaml
-remote_theme: yaoyao-liu/minimal-light
-```
-
-Please note that adding the above line will directly apply all the default settings in this repository to yours.
-
-If you hope to edit any files (e.g., `index.md`), you still need to copy them to your repository.
-
-### Using Locally with Jekyll
-
-First, install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/). The install instructions can be found here: <https://jekyllrb.com/docs/installation/#guides>
-
-Then, clone this repository:
+## Quick Start
 
 ```bash
-git clone https://github.com/yaoyao-liu/minimal-light.git
-cd minimal-light
+# 1. Fork & clone
+git clone https://github.com/H-Freax/TermHub.git
+cd TermHub && npm install
+
+# 2. Run the setup wizard — generates your config
+npm run setup
+
+# 3. Start dev server
+npm run dev
 ```
-Install and run:
+
+> Open **http://localhost:5173** — your site is running.
+> Edit files in `content/`, save, and the browser refreshes automatically.
+
+<br/>
+
+## What You Edit
+
+All your content lives in **one folder** — you never touch source code.
+
+```
+content/
+├── site.json              ← name, email, social links, features
+├── about.md               ← bio & career timeline
+├── experience.json        ← work & education history
+├── publications/          ← one .md per paper
+├── projects/              ← one .md per project
+├── articles/              ← one .md per blog post
+├── news.json              ← announcements
+├── awards.json            ← awards & honors
+└── images/                ← avatar, logos, screenshots
+```
+
+<details>
+<summary>Feature toggles — show or hide entire pages</summary>
+
+<br/>
+
+In `content/site.json`, flip features on or off:
+
+```json
+{
+  "features": {
+    "publications": true,
+    "projects": true,
+    "articles": true,
+    "experience": true,
+    "news": true,
+    "pets": false,
+    "guide": false
+  }
+}
+```
+
+When a feature is `false`, its page and nav link disappear completely.
+
+</details>
+
+<br/>
+
+## Deploy
+
+- **GitHub Pages** — Push to `main`, the included workflow deploys automatically
+- **Vercel** — Import repo → click Deploy (auto-detects Vite)
+- **Netlify** — Import repo → click Deploy
+
+<br/>
+
+## AI Integration — Supports MCP
+
+The **CV → AI → Markdown → Homepage** pipeline taken to its logical conclusion: TermHub includes a built-in **MCP server** that lets Claude directly read your resume, generate all Markdown/JSON content files, and build your site — zero manual editing.
+
+- Give AI your resume PDF or text, get a complete site
+- **19 specialized tools** for publications, projects, experience, awards
+- Built-in **PDF text extraction**
+- AI can start dev server and **live preview** your site
 
 ```bash
-bundle install
-bundle add webrick
-bundle exec jekyll server
+# Quick setup
+cd mcp-server && npm install    # 1. Install
+# 2. Configure Claude Desktop / Code (see mcp-server/mcp-config.json)
+# 3. Tell Claude: "Parse my resume and generate my portfolio"
 ```
-View the live page using `localhost`:
-<http://localhost:4000>. You can get the HTML files in `_site` folder.
 
-### Using the HTML version
+<details>
+<summary>Available tools</summary>
 
-The compiled HTML files are available in the `html_source_file` folder. If you don't like Jekyll, you may directly edit and use the HTML version.
+<br/>
 
-## Customizing
+| Tool | Description |
+|------|-------------|
+| `get_schema` | Get all data types — AI calls this first |
+| `parse_pdf` | Extract text from resume PDF |
+| `generate_from_resume` | Create structured blueprint from resume text |
+| `update_site_config` | Set name, email, social links |
+| `add_publication` | Add a paper with full metadata |
+| `add_project` | Add a project with tags and highlights |
+| `add_experience` | Add work/research timeline entry |
+| `add_education` | Add education entry |
+| `add_news` / `add_award` | Add news items and awards |
+| `write_markdown_content` | Write any Markdown content file |
+| `write_json_content` | Write any JSON content file |
+| `manage_assets` | Copy images to public directory |
+| `preview_site` | Start dev server or production build |
+| `get_site_status` | Overview of current portfolio content |
+| `reset_content` | Clear all content for fresh start |
 
-### Configuration variables
+</details>
 
-The Minimal Light theme will respect the following variables, if set in your site's `_config.yml`:
+> **Workflow:** Resume → `parse_pdf` → `generate_from_resume` → AI calls `add_*` tools → `preview_site` — done in under a minute.
 
-  ```yaml
-# Basic Information 
-title: Your Name
-position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+For detailed setup instructions, see the [AI Integration guide](https://term-hub.vercel.app/docs#mcp-server).
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+<br/>
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+## Tech Stack
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+React 18 · TypeScript 5 · Vite 5 · Chakra UI · Framer Motion · Nord Palette · i18next
 
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+<br/>
 
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+## Changelog
 
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
+- `2026-03-15` **v1.2.0** — Built-in English / Chinese bilingual support with language switcher and auto detection
+- `2026-03-15` **v1.1.0** — Added MCP server with 19 tools for AI-powered portfolio generation
+- `2026-03-14` **v1.0.0** — Initial release with publications, projects, experience, articles, awards, and news
 
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
-  ```
-### Edit `index.md`
+<br/>
 
-Create `index.md` and add your personal information. It supports **Markdown** and **HTML** syntax.
+## Contributing
 
-### Edit included files
+Contributions are welcome! Feel free to:
 
-There are two markdown files included in `index.md`. They are `_includes/publications.md` and `_includes/service.md`, respectively. These two files also support **Markdown** and **HTML** syntax. If you don't hope to include these two files, you may remove the following lines in `index.md`:
-https://github.com/yaoyao-liu/minimal-light/blob/b38070cd0b6bce45d8a885f3828549af8f82b7cb/index.md?plain=1#L21-L23
+- **Star** this repo to show support
+- **Issue** for bugs or feature requests
+- **PR** — check [CONTRIBUTING.md](CONTRIBUTING.md) first
+- **Discord** — [Join our server](https://discord.gg/QV2kyXzaTa) to chat
 
-If you hope to edit the publication list without changing the format, you may edit `_data/publications.yml`:
-https://github.com/yaoyao-liu/minimal-light/blob/77b1b3b31d4561091bcd739f37a2e1880e8b5ca5/_data/publications.yml#L3-L11
-
-
-### Stylesheet
-
-If you'd like to add your own custom styles, you may edit `_sass/minimal-light.scss`.
-
-### Layouts
-
-If you'd like to change the theme's HTML layout, you may edit `_layout/homepage.html`.
+<br/>
 
 ## License
 
-This work is licensed under a [Creative Commons Zero v1.0 Universal](https://github.com/yaoyao-liu/minimal-light/blob/master/LICENSE) License.
-
-## Acknowledgements
-
-Our project uses the source code from the following repositories:
-
-* [pages-themes/minimal](https://github.com/pages-themes/minimal)
-
-* [orderedlist/minimal](https://github.com/orderedlist/minimal)
-
-* [al-folio](https://github.com/alshedivat/al-folio)
+**GPL-3.0-only** · Copyright © 2026 [Yaoyao (Freax) Qian](https://h-freax.github.io/)

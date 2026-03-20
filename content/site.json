@@ -1,0 +1,82 @@
+{
+  "_comment": "Li Zhang's academic homepage - TermHub style",
+
+  "template": "terminal",
+  "components": {},
+  "sections": [
+    "hero", "bio", "newsDisplay", "selectedPublications",
+    "journey", "skills", "accomplishments", "contact", "footer"
+  ],
+
+  "name": {
+    "full": "Li Zhang",
+    "first": "Li",
+    "nickname": "Li",
+    "last": "Zhang",
+    "display": "Li Zhang",
+    "authorVariants": ["Li Zhang", "Zhang, Li"]
+  },
+
+  "title": "Hi, I'm Li Zhang",
+  "tagline": "Ph.D. Student researching the intersection of AI and Law at the University of Pittsburgh.",
+  "avatar": "avatar.png",
+
+  "terminal": {
+    "username": "lizhang",
+    "rotatingSubtitles": [
+      "reasoning with LLMs",
+      "building trustworthy ML systems",
+      "AI for legal reasoning",
+      "bridging CS and law",
+      "evaluating legal AI"
+    ],
+    "skills": [
+      { "name": "Reasoning LLMs", "icon": "FaBrain" },
+      { "name": "Trustworthy ML", "icon": "FaShieldAlt" },
+      { "name": "AI for Law", "icon": "FaBalanceScale" },
+      { "name": "NLP", "icon": "FaLanguage" },
+      { "name": "Legal Reasoning", "icon": "FaGavel" },
+      { "name": "Python", "icon": "FaPython" },
+      { "name": "Deep Learning", "icon": "FaNetworkWired" },
+      { "name": "Research", "icon": "FaFlask" }
+    ],
+    "timezone": "America/New_York"
+  },
+
+  "contact": {
+    "email": "liz239@pitt.edu",
+    "academicEmail": "liz239@pitt.edu",
+    "location": "Pittsburgh, PA"
+  },
+
+  "social": {
+    "github": "https://github.com/lizhang-AIandLaw",
+    "linkedin": "https://www.linkedin.com/in/johnnyzhang28165/",
+    "googleScholar": "https://scholar.google.com/citations?user=re8xXdsAAAAJ&hl=en",
+    "twitter": "",
+    "youtube": "",
+    "medium": "",
+    "bilibili": "",
+    "zhihu": "",
+    "csdn": "",
+    "blog": ""
+  },
+
+  "features": {
+    "publications": true,
+    "projects": false,
+    "articles": false,
+    "experience": true,
+    "news": true,
+    "pets": false,
+    "guide": false
+  },
+
+  "heroSocialIcons": [
+    { "platform": "googleScholar", "icon": "SiGooglescholar", "label": "Google Scholar", "color": "#4285F4" },
+    { "platform": "github", "icon": "FaGithub", "label": "GitHub", "color": "#333" },
+    { "platform": "linkedin", "icon": "FaLinkedin", "label": "LinkedIn", "color": "#0077B5" }
+  ],
+
+  "selectedPublicationIds": ["jurix2025-overruled", "cslaw2026-thinking-longer", "lcic2025-legal-argument"]
+}
