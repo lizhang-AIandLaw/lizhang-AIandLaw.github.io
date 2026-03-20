@@ -1,0 +1,40 @@
+{
+  "education": {
+    "courses": [
+      {
+        "course": "Ph.D. in Information Science",
+        "institution": "University of Pittsburgh",
+        "year": "2022-Present"
+      },
+      {
+        "course": "LL.M. (Master of Laws)",
+        "institution": "Tsinghua University",
+        "year": "2019-2022"
+      },
+      {
+        "course": "B.S. in Electrical Engineering",
+        "institution": "China University of Mining and Technology",
+        "year": "2014-2018"
+      }
+    ]
+  },
+  "reviewing": [],
+  "timeline": [
+    {
+      "title": "Ph.D. Student",
+      "company": "University of Pittsburgh",
+      "companyUrl": "https://www.sci.pitt.edu/",
+      "location": "Pittsburgh, PA",
+      "start": "2022-08-01",
+      "category": "research",
+      "roleType": "research",
+      "isCurrent": true,
+      "summary": "Researching AI for Law under the supervision of Prof. Kevin Ashley.",
+      "highlights": [
+        "Research on reasoning LLMs for legal applications",
+        "Developing trustworthy ML systems for legal reasoning",
+        "Building computational tools for legal practitioners"
+      ]
+    }
+  ]
+}
