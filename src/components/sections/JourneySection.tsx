@@ -1,4 +1,5 @@
 import { Box, Container, VStack, HStack, Text, Heading, Flex, Link, useColorModeValue } from '@chakra-ui/react'
+import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocalizedData } from '@/hooks/useLocalizedData'
 
@@ -11,6 +12,45 @@ const renderBoldText = (text: string, color: string, boldColor: string) => {
     }
     return <Text as="span" key={i} color={color}>{part}</Text>
   })
+}
+
+const monthMap: Record<string, number> = {
+  jan: 1,
+  feb: 2,
+  mar: 3,
+  apr: 4,
+  may: 5,
+  jun: 6,
+  jul: 7,
+  aug: 8,
+  sep: 9,
+  oct: 10,
+  nov: 11,
+  dec: 12,
+}
+
+const parsePeriodPart = (raw: string, fallbackMonth: number) => {
+  const normalized = raw.trim()
+  if (!normalized) return { year: 0, month: fallbackMonth }
+  if (/present/i.test(normalized)) return { year: 9999, month: 12 }
+
+  const monthMatch = normalized.match(/^([A-Za-z]+)\.?\s+(\d{4})$/)
+  if (monthMatch) {
+    const month = monthMap[monthMatch[1].toLowerCase()] ?? fallbackMonth
+    return { year: Number(monthMatch[2]), month }
+  }
+
+  const yearMatch = normalized.match(/(\d{4})/)
+  if (yearMatch) return { year: Number(yearMatch[1]), month: fallbackMonth }
+
+  return { year: 0, month: fallbackMonth }
+}
+
+const getSortKey = (period: string) => {
+  const [startRaw = '', endRaw = ''] = period.split(/\s*-\s*/)
+  const end = parsePeriodPart(endRaw || startRaw, 12)
+  const start = parsePeriodPart(startRaw, 1)
+  return end.year * 1000000 + end.month * 10000 + start.year * 100 + start.month
 }
 
 const JourneySection: React.FC = () => {
@@ -26,6 +66,11 @@ const JourneySection: React.FC = () => {
 
   if (!about.journeyPhases || about.journeyPhases.length === 0) return null
 
+  const sortedJourneyPhases = useMemo(
+    () => [...about.journeyPhases!].sort((a, b) => getSortKey(b.period) - getSortKey(a.period)),
+    [about.journeyPhases]
+  )
+
   return (
     <Box w="full">
       <Container maxW={["full", "full", "7xl"]} px={[2, 4, 8]}>
@@ -39,13 +84,13 @@ const JourneySection: React.FC = () => {
           <Box position="absolute" left={["7px", "7px", "7px"]} top="12px" bottom="12px" w="1px" bg={lineColor} />
 
           <VStack spacing={0} align="stretch">
-            {about.journeyPhases.map((phase, index) => (
+            {sortedJourneyPhases.map((phase, index) => (
               <Flex key={index} gap={[3, 4]} align="start" py={3} position="relative">
                 <Box flexShrink={0} mt="6px">
                   <Box
                     w="14px" h="14px" borderRadius="full" border="2px solid"
-                    borderColor={index === about.journeyPhases!.length - 1 ? 'cyan.400' : dotBorder}
-                    bg={index === about.journeyPhases!.length - 1 ? 'cyan.400' : dotBg}
+                    borderColor={index === 0 ? 'cyan.400' : dotBorder}
+                    bg={index === 0 ? 'cyan.400' : dotBg}
                   />
                 </Box>
                 <Box flex={1} pb={2}>
