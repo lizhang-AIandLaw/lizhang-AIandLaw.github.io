@@ -33,10 +33,11 @@ authors:
   - Charles Clarke
   - Hu Wei
 venue: ACL 2026
-venueType: preprint
+venueType: conference
 year: 2026
-status: preprint
+status: accepted
 keywords: [Benchmark, Legal Practice, LLM Evaluation]
+specialBadges: ["Oral"]
 links:
   arxiv: "https://arxiv.org/abs/2601.16669"
 emoji: "📏"
