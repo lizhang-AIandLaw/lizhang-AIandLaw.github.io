@@ -47,10 +47,9 @@ const parsePeriodPart = (raw: string, fallbackMonth: number) => {
 }
 
 const getSortKey = (period: string) => {
-  const [startRaw = '', endRaw = ''] = period.split(/\s*-\s*/)
-  const end = parsePeriodPart(endRaw || startRaw, 12)
+  const [startRaw = ''] = period.split(/\s*-\s*/)
   const start = parsePeriodPart(startRaw, 1)
-  return end.year * 1000000 + end.month * 10000 + start.year * 100 + start.month
+  return start.year * 100 + start.month
 }
 
 const JourneySection: React.FC = () => {
