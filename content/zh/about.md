@@ -15,7 +15,7 @@ journeyPhases:
     org: Tsinghua University
     description: "Completed graduate study in **Computational Law** at **Tsinghua University**, where legal reasoning, computation, and interdisciplinary research became the core of my academic work."
     tags: [Legal Theory, Computational Law, Interdisciplinary Research]
-  - period: "Jun. 2022 - Jun. 2024"
+  - period: "Jun. 2022 - Jul. 2024"
     title: Legal Counselor
     org: The Export-Import Bank of China, Nanjing, China
     description: "Served as **Legal Counselor** at **The Export-Import Bank of China** in Nanjing, spearheading legal negotiations for complex banking transactions and ensuring strict regulatory compliance. Drafted and reviewed credit facility agreements and security documents for cross-border financing, while advising internal stakeholders on operational risk mitigation and dispute resolution."
