@@ -37,7 +37,6 @@ venueType: conference
 year: 2026
 status: accepted
 keywords: [Benchmark, Legal Practice, LLM Evaluation]
-specialBadges: ["Oral"]
 links:
   arxiv: "https://arxiv.org/abs/2601.16669"
 emoji: "📏"
