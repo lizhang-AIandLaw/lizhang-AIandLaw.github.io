@@ -4,6 +4,19 @@
     "badge": "Publication",
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
+    "title": "Paper accepted at ICAIL 2026",
+    "description": "Our paper \"Retrieval-Based Multi-Label Legal Annotation: Extensible, Data-Efficient and Hallucination-Free\" has been accepted to ICAIL 2026.",
+    "date": "May 2026",
+    "sortDate": "2026-05-16",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/abs/2605.16767", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
     "title": "PLawBench accepted to ACL 2026 Main",
     "description": "Our paper \"PLawBench: A Rubric-Based Benchmark for Evaluating LLMs in Real-World Legal Practice\" has been accepted to the ACL 2026 main conference.",
     "date": "Apr 2026",
