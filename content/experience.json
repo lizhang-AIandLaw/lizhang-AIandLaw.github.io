@@ -26,6 +26,22 @@
   "reviewing": [],
   "timeline": [
     {
+      "title": "Applied Research Intern",
+      "company": "Thomson Reuters Labs",
+      "companyUrl": "https://www.thomsonreuters.com/",
+      "location": "Pittsburgh, PA",
+      "start": "2026-05-01",
+      "end": "2026-08-31",
+      "category": "industry",
+      "roleType": "research",
+      "summary": "Working in an applied industrial research lab on AI agents, long-term memory, and legal technology.",
+      "highlights": [
+        "Researching long-term memory functionality for AI-agentic systems in legal technology settings",
+        "Developing and evaluating agent workflows for deep legal research and long-form legal content generation",
+        "Collaborating across research, product, and engineering to prototype AI tools for legal professionals"
+      ]
+    },
+    {
       "title": "Legal Intern, Capital Market",
       "company": "Zhonglun Law Firm",
       "location": "Beijing, China",

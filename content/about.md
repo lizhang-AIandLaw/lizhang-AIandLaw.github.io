@@ -1,5 +1,10 @@
 ---
 journeyPhases:
+  - period: "May 2026 - Aug. 2026"
+    title: Applied Research Intern
+    org: Thomson Reuters Labs
+    description: "Joined **Thomson Reuters Labs** as an Applied Research Intern, working in an industrial AI research lab on **AI agents**, long-term memory, and legal technology applications including deep legal research and long-form content generation."
+    tags: [Thomson Reuters Labs, AI Agents, Long-Term Memory, Legal Tech]
   - period: "Sep. 2015 - Jun. 2019"
     title: Bachelor of Electrical Engineering
     org: China University of Mining and Technology
@@ -40,7 +45,7 @@ version:
         - News and updates
 ---
 
-I am a Ph.D. student in **Intelligent Systems** at the [University of Pittsburgh](https://www.pitt.edu/), advised by [Prof. Kevin Ashley](https://www.law.pitt.edu/people/kevin-d-ashley). Before starting my doctoral work in August 2024, I worked as a Legal Counselor at [The Export-Import Bank of China](https://www.eximbank.gov.cn/), where I focused on banking transactions, cross-border financing, regulatory compliance, and dispute resolution. Previously, I completed a **Master of Computational Law** at [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm), studied abroad at the [Australian National University](https://www.anu.edu.au/), and earned a **Bachelor of Electrical Engineering** from [China University of Mining and Technology](https://global.cumt.edu.cn/).
+I am a Ph.D. student in **Intelligent Systems** at the [University of Pittsburgh](https://www.pitt.edu/), advised by [Prof. Kevin Ashley](https://www.law.pitt.edu/people/kevin-d-ashley). In Summer 2026, I joined **Thomson Reuters Labs** as an Applied Research Intern, working on AI agents, long-term memory, and legal technology. Before starting my doctoral work in August 2024, I worked as a Legal Counselor at [The Export-Import Bank of China](https://www.eximbank.gov.cn/), where I focused on banking transactions, cross-border financing, regulatory compliance, and dispute resolution. Previously, I completed a **Master of Computational Law** at [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm), studied abroad at the [Australian National University](https://www.anu.edu.au/), and earned a **Bachelor of Electrical Engineering** from [China University of Mining and Technology](https://global.cumt.edu.cn/).
 
 My research explores the intersection of **AI** and **Law**, where I design intelligent systems with dual purpose: (1) for **legal practitioners**, I build computational tools that leverage large language models to support legal reasoning, case analysis, and document review; and (2) for broader users, I design systems that make complex legal knowledge more accessible, reliable, and actionable.
 
