@@ -27,6 +27,19 @@
     ]
   },
   {
+    "type": "experience",
+    "badge": "Internship",
+    "icon": "FaBriefcase",
+    "iconColor": "green.400",
+    "title": "Started applied research internship at Thomson Reuters Labs",
+    "description": "I joined Thomson Reuters Labs as an Applied Research Intern from May 1 to August 31, 2026, working on AI agents, long-term memory, and legal technology applications.",
+    "date": "May 2026",
+    "sortDate": "2026-05-01",
+    "links": [
+      { "text": "Thomson Reuters", "url": "https://www.thomsonreuters.com/", "icon": "FaLink" }
+    ]
+  },
+  {
     "type": "publication",
     "badge": "Publication",
     "icon": "FaFileAlt",
