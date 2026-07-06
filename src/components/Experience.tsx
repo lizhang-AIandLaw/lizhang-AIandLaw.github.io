@@ -46,6 +46,12 @@ const getIconUrl = (url?: string, company?: string, logos?: Record<string, strin
 const fmtDateFn = (v: string | undefined, presentLabel: string, lang: string) => {
   if (!v) return presentLabel
   if (v.toLowerCase() === 'present') return presentLabel
+  const monthMatch = v.match(/^(\d{4})-(\d{2})(?:-\d{2})?$/)
+  if (monthMatch) {
+    const [, year, month] = monthMatch
+    const d = new Date(Number(year), Number(month) - 1, 1)
+    return d.toLocaleDateString(lang === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', year: 'numeric' })
+  }
   const d = new Date(v)
   if (Number.isNaN(d.getTime())) return v
   return d.toLocaleDateString(lang === 'zh' ? 'zh-CN' : 'en-US', { month: 'short', year: 'numeric' })
