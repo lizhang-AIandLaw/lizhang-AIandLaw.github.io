@@ -20,11 +20,11 @@ authors:
   - Bing Zhao
   - Hu Wei
   - Lin Qu
-venue: arXiv
-venueType: preprint
+venue: EMNLP 2026 Main
+venueType: conference
 year: 2026
-month: June
-status: preprint
+month: August
+status: accepted
 isFirstAuthor: true
 specialBadges: ["First Author"]
 keywords: [Legal Consultation, Legal Sycophancy, LLM Evaluation, Multi-Turn Dialogue]

@@ -4,10 +4,10 @@
     "badge": "Publication",
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
-    "title": "DLawBench preprint is now on arXiv",
-    "description": "Our paper \"DLawBench: Evaluating LLMs Through Multi-Turn Legal Consultation\" is now on arXiv, introducing a benchmark for testing whether LLMs can elicit missing facts, identify risks, and produce grounded legal analysis.",
-    "date": "2026 年 6 月",
-    "sortDate": "2026-06-11",
+    "title": "DLawBench accepted to EMNLP 2026 Main",
+    "description": "Our paper \"DLawBench: Evaluating LLMs Through Multi-Turn Legal Consultation\" has been accepted to the EMNLP 2026 main conference.",
+    "date": "2026 年 8 月",
+    "sortDate": "2026-08-21",
     "links": [
       { "text": "Paper", "url": "https://arxiv.org/abs/2606.13931", "icon": "FaFilePdf" },
       { "text": "Code & Data", "url": "https://github.com/SKYLENAGE-AI/DLawBench", "icon": "FaGithub" }
