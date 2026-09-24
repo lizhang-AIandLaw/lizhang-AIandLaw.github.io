@@ -13,10 +13,10 @@ authors:
   - Yelong Shen
   - Jianfeng Gao
   - Jingbo Shang
-venue: ICML 2026
-venueType: preprint
+venue: EMNLP 2026 Main
+venueType: conference
 year: 2026
-status: preprint
+status: accepted
 keywords: [Mixture of Experts, Post-Training, Router Gradient]
 links:
   projectPage: "https://fengyao.notion.site/moe-posttraining"
