@@ -24,6 +24,7 @@ venue: EMNLP 2026 Main
 venueType: conference
 year: 2026
 month: August
+sortOrder: 1
 status: accepted
 isFirstAuthor: true
 specialBadges: ["First Author"]

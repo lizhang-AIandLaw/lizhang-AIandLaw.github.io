@@ -16,6 +16,7 @@ authors:
 venue: EMNLP 2026 Main Conference
 venueType: conference
 year: 2026
+sortOrder: 2
 status: accepted
 keywords: [Mixture of Experts, Post-Training, Router Gradient]
 links:

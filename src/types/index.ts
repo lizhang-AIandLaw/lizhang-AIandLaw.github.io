@@ -141,6 +141,7 @@ export interface Publication {
   venueType: 'conference' | 'workshop' | 'demo' | 'preprint'
   year: number
   month?: string
+  sortOrder?: number
   status: 'accepted' | 'published' | 'preprint'
   abstract?: string
   keywords?: string[]

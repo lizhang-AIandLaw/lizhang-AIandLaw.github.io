@@ -30,8 +30,8 @@ export function getLocalizedSiteConfig(lang: string) {
 /** GitHub username extracted from URL */
 export const githubUsername = siteConfig.social.github.split('/').pop() ?? ''
 
-/** Selected publication IDs as a Set for fast lookup */
-export const selectedPublicationIds = new Set<string>(siteConfig.selectedPublicationIds)
+/** Selected publication IDs in their configured display order */
+export const selectedPublicationOrder = siteConfig.selectedPublicationIds
 
 /** Auto-generated navigation from enabled features */
 export const navItems = [

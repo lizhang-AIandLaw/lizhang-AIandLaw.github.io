@@ -130,10 +130,10 @@ const PublicationsTerminal: React.FC = () => {
       filtered = filtered.filter(pub => pub.venueType === selectedVenue)
     }
     
-    // Sort by year (newest first), then by month
+    // Sort by year (newest first), then by explicit publication order
     filtered.sort((a, b) => {
       if (b.year !== a.year) return b.year - a.year
-      return 0
+      return (a.sortOrder ?? Number.MAX_SAFE_INTEGER) - (b.sortOrder ?? Number.MAX_SAFE_INTEGER)
     })
     
     return filtered

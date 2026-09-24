@@ -3,7 +3,7 @@ import { Box, Container, VStack, HStack, Text, Heading, Flex, Link,
   useColorModeValue } from '@chakra-ui/react'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import { selectedPublicationIds } from '@/site.config'
+import { selectedPublicationOrder } from '@/site.config'
 import { useLocalizedData } from '@/hooks/useLocalizedData'
 import DynamicIcon from '../DynamicIcon'
 
@@ -127,7 +127,9 @@ const SelectedPublicationsSection: React.FC = () => {
   const { publications } = useLocalizedData()
 
   const selectedPubs = useMemo(
-    () => publications.filter((pub) => selectedPublicationIds.has(pub.id)),
+    () => selectedPublicationOrder
+      .map((id) => publications.find((pub) => pub.id === id))
+      .filter((pub): pub is (typeof publications)[number] => Boolean(pub)),
     [publications]
   )
 
