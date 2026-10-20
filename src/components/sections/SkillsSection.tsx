@@ -6,6 +6,7 @@ import DynamicIcon from '../DynamicIcon'
 type SkillItem = string | { name: string; icon?: string; category?: string }
 
 const SkillsSection: React.FC = () => {
+  const dividerColor = useColorModeValue('gray.200', 'gray.700')
   const { t } = useTranslation()
   const { siteOwner } = useLocalizedData()
   const skills = (siteOwner.skills ?? []) as SkillItem[]
@@ -24,7 +25,7 @@ const SkillsSection: React.FC = () => {
         <Flex align="center" gap={3} mb={4}>
           <Box h="2px" w="20px" bg="cyan.400" borderRadius="full" flexShrink={0} />
           <Heading size="md" fontWeight="semibold">{t('about.skills', 'Skills')}</Heading>
-          <Box flex="1" h="1px" bg={useColorModeValue('gray.200', 'gray.700')} />
+          <Box flex="1" h="1px" bg={dividerColor} />
         </Flex>
         <HStack spacing={2} flexWrap="wrap">
           {skills.map((skill) => (

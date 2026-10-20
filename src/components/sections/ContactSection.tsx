@@ -5,6 +5,7 @@ import DynamicIcon from '../DynamicIcon'
 import { withBase } from '@/utils/asset'
 
 const ContactSection: React.FC = () => {
+  const dividerColor = useColorModeValue('gray.200', 'gray.700')
   const { t } = useTranslation()
   const { siteOwner } = useLocalizedData()
   const textColor = useColorModeValue('gray.600', 'gray.400')
@@ -28,7 +29,7 @@ const ContactSection: React.FC = () => {
         <Flex align="center" gap={3} mb={4}>
           <Box h="2px" w="20px" bg="cyan.400" borderRadius="full" flexShrink={0} />
           <Heading size="md" fontWeight="semibold">{t('about.contact', 'Contact')}</Heading>
-          <Box flex="1" h="1px" bg={useColorModeValue('gray.200', 'gray.700')} />
+          <Box flex="1" h="1px" bg={dividerColor} />
         </Flex>
         <VStack spacing={2} align="stretch">
           {items.map((item) => (

@@ -95,7 +95,7 @@ export function Contact() {
   const { t } = useTranslation()
   const { siteConfig } = useLocalizedData()
   return <Section id="contact" title={t('contact.title')}>
-    <div className="academic-contact"><a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email} ↗</a><span>{siteConfig.contact.location}</span></div>
+    <div className="academic-contact"><a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email} ↗</a><span>{siteConfig.contact.address || siteConfig.contact.location}</span></div>
   </Section>
 }
 

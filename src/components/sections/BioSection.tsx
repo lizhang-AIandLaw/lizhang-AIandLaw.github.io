@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useLocalizedData } from '@/hooks/useLocalizedData'
 
 const BioSection: React.FC = () => {
+  const dividerColor = useColorModeValue('gray.200', 'gray.700')
   const { t } = useTranslation()
   const { about } = useLocalizedData()
   const textColor = useColorModeValue('gray.600', 'gray.400')
@@ -15,7 +16,7 @@ const BioSection: React.FC = () => {
         <Flex align="center" gap={3} mb={4}>
           <Box h="2px" w="20px" bg="cyan.400" borderRadius="full" flexShrink={0} />
           <Heading size="md" fontWeight="semibold">{t('about.bio', 'About')}</Heading>
-          <Box flex="1" h="1px" bg={useColorModeValue('gray.200', 'gray.700')} />
+          <Box flex="1" h="1px" bg={dividerColor} />
         </Flex>
         <Text fontSize="sm" lineHeight="tall" color={textColor}>
           {about.journey}

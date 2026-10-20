@@ -34,6 +34,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ title, avatar, research = [], researchLogos = {}, education = [], educationLogos = {} }: HeroSectionProps) => {
+  const researchHoverBg = useColorModeValue('gray.100', 'gray.700')
+  const socialIconColor = useColorModeValue('gray.400', 'gray.500')
   const { t } = useTranslation()
   const { siteOwner, siteConfig } = useLocalizedData()
   const headingColor = useColorModeValue('gray.800', 'white')
@@ -170,7 +172,7 @@ const HeroSection = ({ title, avatar, research = [], researchLogos = {}, educati
                       const logo = researchLogos[item.lab]
                       return (
                         <Link key={index} href={item.link} isExternal _hover={{ textDecoration: 'none' }} w="full">
-                          <HStack spacing={2.5} p={2} borderRadius="md" transition="all 0.2s" _hover={{ bg: useColorModeValue('gray.100', 'gray.700') }}>
+                          <HStack spacing={2.5} p={2} borderRadius="md" transition="all 0.2s" _hover={{ bg: researchHoverBg }}>
                             {logo ? (
                               <Image src={logo} alt={item.lab} w="28px" h="28px" borderRadius="sm" objectFit="contain" flexShrink={0} />
                             ) : (
@@ -270,7 +272,7 @@ const HeroSection = ({ title, avatar, research = [], researchLogos = {}, educati
                       <Box
                         p={1.5}
                         cursor="pointer"
-                        color={useColorModeValue('gray.400', 'gray.500')}
+                        color={socialIconColor}
                         transition="all 0.2s"
                         _hover={{ color: item.color, transform: 'scale(1.2)' }}
                       >

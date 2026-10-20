@@ -12,20 +12,13 @@
  * 2. Template default slots
  */
 
-import { createContext, useContext } from 'react'
+import { useContext } from 'react'
 import type { ComponentSlots, SlotName } from './slots'
 
-const SlotContext = createContext<ComponentSlots | null>(null)
+import { SlotContext } from './slotContext'
+export { SlotProvider } from './SlotProvider'
 
-interface SlotProviderProps {
-  /** Resolved slot map (template defaults merged with user overrides) */
-  slots: ComponentSlots
-  children: React.ReactNode
-}
-
-export const SlotProvider: React.FC<SlotProviderProps> = ({ slots, children }) => {
-  return <SlotContext.Provider value={slots}>{children}</SlotContext.Provider>
-}
+export type VariantRegistry = { [K in SlotName]?: Record<string, ComponentSlots[K]> }
 
 /**
  * Get the active component for a slot.
@@ -51,16 +44,21 @@ export function useSlot<K extends SlotName>(name: K): ComponentSlots[K] {
  */
 export function resolveSlots(
   templateSlots: ComponentSlots,
-  variantRegistry: Record<string, Record<string, React.ComponentType<any>>>,
+  variantRegistry: VariantRegistry,
   userOverrides?: Record<string, string>,
 ): ComponentSlots {
   if (!userOverrides) return templateSlots
 
   const resolved = { ...templateSlots }
 
+  const applyOverride = <K extends SlotName>(slotName: K, variantId: string) => {
+    const component = variantRegistry[slotName]?.[variantId]
+    if (component) resolved[slotName] = component
+  }
+
   for (const [slotName, variantId] of Object.entries(userOverrides)) {
-    if (slotName in resolved && variantRegistry[slotName]?.[variantId]) {
-      ;(resolved as any)[slotName] = variantRegistry[slotName][variantId]
+    if (Object.prototype.hasOwnProperty.call(resolved, slotName)) {
+      applyOverride(slotName as SlotName, variantId)
     }
   }
 

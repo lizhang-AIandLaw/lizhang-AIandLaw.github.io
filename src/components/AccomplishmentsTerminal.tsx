@@ -38,6 +38,9 @@ const kindMeta: Record<string, { labelKey: string; color: [string, string] }> = 
 }
 
 const AwardRow = ({ award }: { award: Award }) => {
+  const popoverBg = useColorModeValue('white', 'gray.800')
+  const popoverBorder = useColorModeValue('gray.200', 'gray.700')
+  const popoverText = useColorModeValue('gray.600', 'gray.300')
   const { t } = useTranslation()
   const borderColor = useColorModeValue('gray.100', 'gray.800')
   const titleColor = useColorModeValue('gray.800', 'gray.100')
@@ -87,8 +90,8 @@ const AwardRow = ({ award }: { award: Award }) => {
           {content}
         </PopoverTrigger>
         <PopoverContent
-          bg={useColorModeValue('white', 'gray.800')}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}
+          bg={popoverBg}
+          borderColor={popoverBorder}
           maxW="360px"
           boxShadow="lg"
         >
@@ -100,7 +103,7 @@ const AwardRow = ({ award }: { award: Award }) => {
                 Easter Egg
               </Text>
             </HStack>
-            <Text fontSize="xs" color={useColorModeValue('gray.600', 'gray.300')} lineHeight="tall">
+            <Text fontSize="xs" color={popoverText} lineHeight="tall">
               {award.egg}
             </Text>
           </PopoverBody>

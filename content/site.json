@@ -5,7 +5,7 @@
   "components": {},
   "sections": [
     "hero", "bio", "newsDisplay", "selectedPublications",
-    "journey", "skills", "accomplishments", "service", "contact", "footer"
+    "journey", "accomplishments", "service", "contact", "footer"
   ],
 
   "name": {
@@ -49,7 +49,8 @@
     "email": "liz239@pitt.edu",
     "academicEmail": "liz239@pitt.edu",
     "hiringEmail": "",
-    "location": "Pittsburgh, PA"
+    "location": "Pittsburgh, PA",
+    "address": "3420 Forbes Ave, Pittsburgh, PA 15260"
   },
 
   "pets": [],

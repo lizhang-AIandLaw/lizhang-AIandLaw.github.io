@@ -53,6 +53,8 @@ const getSortKey = (period: string) => {
 }
 
 const JourneySection: React.FC = () => {
+  const separatorColor = useColorModeValue('gray.400', 'gray.600')
+  const organizationColor = useColorModeValue('gray.400', 'gray.500')
   const { t } = useTranslation()
   const { about } = useLocalizedData()
   const textColor = useColorModeValue('gray.500', 'gray.400')
@@ -63,12 +65,12 @@ const JourneySection: React.FC = () => {
   const dotBg = useColorModeValue('white', 'gray.800')
   const tagBg = useColorModeValue('gray.100', 'gray.800')
 
-  if (!about.journeyPhases || about.journeyPhases.length === 0) return null
-
   const sortedJourneyPhases = useMemo(
-    () => [...about.journeyPhases!].sort((a, b) => getSortKey(b.period) - getSortKey(a.period)),
+    () => [...(about.journeyPhases ?? [])].sort((a, b) => getSortKey(b.period) - getSortKey(a.period)),
     [about.journeyPhases]
   )
+
+  if (sortedJourneyPhases.length === 0) return null
 
   return (
     <Box w="full">
@@ -97,8 +99,8 @@ const JourneySection: React.FC = () => {
                     <Text fontSize="2xs" fontFamily="mono" color="cyan.400" fontWeight="semibold" textTransform="uppercase" letterSpacing="wide">
                       {phase.period}
                     </Text>
-                    <Text fontSize="2xs" color={useColorModeValue('gray.400', 'gray.600')}>/</Text>
-                    <Text fontSize="2xs" fontFamily="mono" color={useColorModeValue('gray.400', 'gray.500')}>{phase.org}</Text>
+                    <Text fontSize="2xs" color={separatorColor}>/</Text>
+                    <Text fontSize="2xs" fontFamily="mono" color={organizationColor}>{phase.org}</Text>
                   </HStack>
                   <Text fontSize="sm" fontWeight="semibold" color={headingColor} mb={1}>{phase.title}</Text>
                   <Text fontSize="xs" lineHeight="tall" mb={2}>

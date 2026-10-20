@@ -79,7 +79,7 @@ const FlowNode: React.FC<{
   termSecondary: string; termMuted: string; termBorder: string
   hlc: { num: string; kw: string; str: string }
   onImageClick: (src: string, alt: string) => void
-}> = ({ item, ct, isDark, isLast: _isLast, termText, termSecondary, termMuted, termBorder, hlc, onImageClick }) => {
+}> = ({ item, ct, isDark, termText, termSecondary, termMuted, termBorder, hlc, onImageClick }) => {
   const { t } = useTranslation()
   const [expanded, setExpanded] = useState(false)
   const role = roleConfig[item.role || 'independent']
@@ -303,7 +303,7 @@ const Projects: React.FC = () => {
         color: themes[k].color, count: cnt[k],
       })),
     ]
-  }, [projects, themes, termInfo])
+  }, [projects, themes, termInfo, t])
 
   /* ── Filtering + sorting ── */
   const filtered = useMemo(() => {

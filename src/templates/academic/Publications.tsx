@@ -43,8 +43,6 @@ export function PublicationEntry({ publication: pub }: { publication: Publicatio
         </button></>}
       </p>
       <p className="academic-paper-venue"><em>{pub.venue}{String(pub.venue).includes(String(pub.year)) ? '' : `, ${pub.year}`}</em>
-        {pub.status === 'accepted' && <span> · {t('academic.accepted')}</span>}
-        {pub.status === 'preprint' && <span> · {t('academic.preprint')}</span>}
       </p>
       {Boolean(pub.specialBadges?.length || pub.isCoFirst) && <p className="academic-paper-honors">
         {pub.specialBadges?.map(badge => <span key={badge}>{badge}</span>)}

@@ -12,6 +12,7 @@ const roleIcons: Record<string, string> = {
 }
 
 const TeachingSection: React.FC = () => {
+  const dividerColor = useColorModeValue('gray.200', 'gray.700')
   const { t } = useTranslation()
   const { teaching } = useLocalizedData()
   const borderColor = useColorModeValue('gray.100', 'gray.800')
@@ -27,7 +28,7 @@ const TeachingSection: React.FC = () => {
         <Flex align="center" gap={3} mb={4}>
           <Box h="2px" w="20px" bg="cyan.400" borderRadius="full" flexShrink={0} />
           <Heading size="md" fontWeight="semibold">{t('about.teaching', 'Teaching')}</Heading>
-          <Box flex="1" h="1px" bg={useColorModeValue('gray.200', 'gray.700')} />
+          <Box flex="1" h="1px" bg={dividerColor} />
         </Flex>
         <VStack spacing={0} align="stretch">
           {teaching.map((entry, i) => (

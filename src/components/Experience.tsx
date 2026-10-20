@@ -130,7 +130,7 @@ const Experience: React.FC = () => {
   }, [sorted])
 
   const education = experienceData.education.courses
-  const reviewingItems = experienceData.reviewing ?? []
+  const reviewingItems = useMemo(() => experienceData.reviewing ?? [], [experienceData.reviewing])
   const reviewingByYear = useMemo(() => {
     const groups: Record<string, typeof reviewingItems> = {}
     for (const item of reviewingItems) {

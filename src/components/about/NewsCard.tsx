@@ -8,6 +8,8 @@ interface NewsCardProps {
 }
 
 const NewsCard: React.FC<NewsCardProps> = ({ news }) => {
+  const badgeBackground = useColorModeValue(`${news.iconColor.split('.')[0]}.500`, `${news.iconColor.split('.')[0]}.600`)
+  const badgeShadow = useColorModeValue('0 2px 5px rgba(0,0,0,0.1)', '0 2px 5px rgba(0,0,0,0.3)')
   // Get appropriate icon based on news type
   const getIconName = () => {
     switch (news.type) {
@@ -47,8 +49,8 @@ const NewsCard: React.FC<NewsCardProps> = ({ news }) => {
           top={2}
           right={2}
           colorScheme={news.iconColor.split('.')[0]}
-          bg={useColorModeValue(`${news.iconColor.split('.')[0]}.500`, `${news.iconColor.split('.')[0]}.600`)}
-          color={useColorModeValue('white', 'white')}
+          bg={badgeBackground}
+          color="white"
           px={2}
           py={1}
           borderRadius="md"
@@ -56,7 +58,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ news }) => {
           display="flex"
           alignItems="center"
           fontWeight="medium"
-          boxShadow={useColorModeValue('0 2px 5px rgba(0,0,0,0.1)', '0 2px 5px rgba(0,0,0,0.3)')}
+          boxShadow={badgeShadow}
           zIndex={1}
         >
           <DynamicIcon name="FaClock" boxSize={3} mr={1} />

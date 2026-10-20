@@ -1,4 +1,4 @@
-import { Icon } from '@chakra-ui/react'
+import { Icon, type IconProps } from '@chakra-ui/react'
 import { IconType } from 'react-icons'
 import {
   FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaYoutube, FaHeart, FaCode, FaClock,
@@ -70,11 +70,8 @@ const icons: { [key: string]: IconType } = {
   FaShieldAlt,
 }
 
-interface DynamicIconProps {
+interface DynamicIconProps extends IconProps {
   name?: string
-  color?: string
-  boxSize?: number | number[] | string | string[]
-  [key: string]: any
 }
 
 const DynamicIcon: React.FC<DynamicIconProps> = ({ name, ...props }) => {

@@ -105,7 +105,7 @@ const researchStatuses = [
   { label: "CODE.SHIPPING", suffix: "📦", colorKey: "info" },
 ];
 
-const NewsTimeline: React.FC<NewsTimelineProps> = ({ news, showHeader: _showHeader = false }) => {
+const NewsTimeline: React.FC<NewsTimelineProps> = ({ news }) => {
   const { colorMode } = useColorMode();
   const isDark = colorMode === 'dark';
   const { t } = useTranslation();
@@ -280,7 +280,7 @@ const NewsTimeline: React.FC<NewsTimelineProps> = ({ news, showHeader: _showHead
     }
     
     return description;
-  }, [isWideEnough, termCommand]);
+  }, [isWideEnough, termCommand, t]);
   
   // Based on browser width, decide category display
   const getCategoryLength = useCallback((type: string) => {
@@ -605,7 +605,7 @@ const NewsTimeline: React.FC<NewsTimelineProps> = ({ news, showHeader: _showHead
                         fontWeight="bold"
                         whiteSpace="nowrap"
                       >
-                        {item.badge.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}\u{1F900}-\u{1F9FF}\u{200D}\u{20E3}]/gu, '').replace(' Accepted', '').replace('!', '').trim()}
+                        {item.badge.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|\u{200D}|\u{20E3}/gu, '').replace(' Accepted', '').replace('!', '').trim()}
                       </Text>
                     )}
                     <Text fontWeight="medium" color={termText} isTruncated fontSize={["2xs", "xs"]}>
@@ -688,7 +688,7 @@ const NewsTimeline: React.FC<NewsTimelineProps> = ({ news, showHeader: _showHead
                           <>
                             <Text color={termSecondary}>·</Text>
                             <Text color={termSuccess} fontWeight="medium">
-                              {item.badge.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}\u{1F900}-\u{1F9FF}\u{200D}\u{20E3}]/gu, '').trim()}
+                              {item.badge.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]|[\u{FE00}-\u{FE0F}]|\u{200D}|\u{20E3}/gu, '').trim()}
                             </Text>
                           </>
                         )}

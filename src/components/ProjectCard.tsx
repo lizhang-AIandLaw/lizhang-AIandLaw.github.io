@@ -25,6 +25,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const highlightBorder = useColorModeValue('blue.400', 'blue.600')
   const { isOpen, onToggle } = useDisclosure()
   const cardBg = useColorModeValue('white', 'gray.800')
   const chipBg = useColorModeValue('gray.50', 'gray.900')
@@ -111,7 +112,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 bg={chipBg}
                 borderRadius="md"
                 borderLeft="4px solid"
-                borderLeftColor={useColorModeValue('blue.400', 'blue.600')}
+                borderLeftColor={highlightBorder}
               >
                 <VStack as="ul" align="start" spacing={2} fontSize="sm" color={textColor} pl={2}>
                   {highlights.map((item, idx) => (

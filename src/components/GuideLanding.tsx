@@ -142,29 +142,34 @@ const CodePreview: React.FC<{ lines: { key: string; value: string }[] }> = ({ li
 
 const SectionHead: React.FC<{ label: string; title: string; desc?: string; color: string }> = ({
   label, title, desc, color,
-}) => (
-  <VStack spacing={2} mb={8} textAlign="center">
-    <Flex align="center" gap={2}>
-      <Box h="2px" w="16px" bg={color} borderRadius="full" />
-      <Text fontSize="xs" fontWeight="bold" color={color} textTransform="uppercase" letterSpacing="wider" fontFamily="mono">
-        {label}
-      </Text>
-      <Box h="2px" w="16px" bg={color} borderRadius="full" />
-    </Flex>
-    <Heading as="h2" fontSize={['lg', 'xl']} fontWeight="semibold" color={useColorModeValue('gray.800', 'gray.100')}>
-      {title}
-    </Heading>
-    {desc && (
-      <Text fontSize="sm" color={useColorModeValue('gray.500', 'gray.400')} maxW="500px">
-        {desc}
-      </Text>
-    )}
-  </VStack>
-)
+}) => {
+  const descriptionColor = useColorModeValue('gray.500', 'gray.400')
+  return (
+    <VStack spacing={2} mb={8} textAlign="center">
+      <Flex align="center" gap={2}>
+        <Box h="2px" w="16px" bg={color} borderRadius="full" />
+        <Text fontSize="xs" fontWeight="bold" color={color} textTransform="uppercase" letterSpacing="wider" fontFamily="mono">
+          {label}
+        </Text>
+        <Box h="2px" w="16px" bg={color} borderRadius="full" />
+      </Flex>
+      <Heading as="h2" fontSize={['lg', 'xl']} fontWeight="semibold" color={useColorModeValue('gray.800', 'gray.100')}>
+        {title}
+      </Heading>
+      {desc && (
+        <Text fontSize="sm" color={descriptionColor} maxW="500px">
+          {desc}
+        </Text>
+      )}
+    </VStack>
+  )
+}
 
 /* ── Main Landing ─────────────────────────────────────────────── */
 
 const GuideLanding: React.FC = () => {
+  const itemTitleColor = useColorModeValue('gray.800', 'gray.100')
+  const itemLabelColor = useColorModeValue('gray.700', 'gray.200')
   const navigate = useNavigate()
   const { colorMode } = useColorMode()
   const isDark = colorMode === 'dark'
@@ -573,7 +578,7 @@ const GuideLanding: React.FC = () => {
                       <Icon as={item.icon} color={item.color} boxSize={4} />
                     </Flex>
                     <Box>
-                      <Text fontWeight="semibold" fontSize="sm" color={useColorModeValue('gray.800', 'gray.100')} mb={0.5}>{item.title}</Text>
+                      <Text fontWeight="semibold" fontSize="sm" color={itemTitleColor} mb={0.5}>{item.title}</Text>
                       <Text fontSize="xs" color={subtitleColor} lineHeight="1.6">{item.desc}</Text>
                     </Box>
                   </HStack>
@@ -904,7 +909,7 @@ const GuideLanding: React.FC = () => {
                 >
                   <Icon as={p.icon} color={p.color} boxSize={3.5} />
                   <Box>
-                    <Text fontSize="xs" fontWeight="bold" color={useColorModeValue('gray.700', 'gray.200')}>{p.label}</Text>
+                    <Text fontSize="xs" fontWeight="bold" color={itemLabelColor}>{p.label}</Text>
                     <Text fontSize="2xs" color={subtitleColor}>{p.features}</Text>
                   </Box>
                 </HStack>
@@ -965,7 +970,7 @@ const GuideLanding: React.FC = () => {
               <HStack spacing={3}>
                 <Icon as={item.icon} color={item.color} boxSize={4} />
                 <Box>
-                  <Text fontWeight="semibold" fontSize="sm" color={useColorModeValue('gray.700', 'gray.200')}>
+                  <Text fontWeight="semibold" fontSize="sm" color={itemLabelColor}>
                     {item.title}
                   </Text>
                   <Text fontSize="xs" color={subtitleColor}>{item.desc}</Text>

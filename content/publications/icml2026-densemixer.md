@@ -13,7 +13,7 @@ authors:
   - Yelong Shen
   - Jianfeng Gao
   - Jingbo Shang
-venue: EMNLP 2026 Main Conference
+venue: EMNLP 2026 Main
 venueType: conference
 year: 2026
 sortOrder: 2

@@ -103,7 +103,7 @@ const PublicationsTerminal: React.FC = () => {
   }, [])
   
   // Get statistics
-  const stats = useMemo(() => getPublicationStats(), [publications])
+  const stats = useMemo(() => getPublicationStats(), [])
   
   // Filter publications
   const filteredPublications = useMemo(() => {

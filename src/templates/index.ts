@@ -16,8 +16,8 @@
  */
 
 import type { TemplateConfig } from './types'
-import type { ComponentSlots } from './slots'
-import { resolveSlots } from './context'
+import type { ComponentSlots, SlotName } from './slots'
+import { resolveSlots, type VariantRegistry } from './context'
 import terminalTemplate from './terminal'
 import academicTemplate from './academic'
 
@@ -39,11 +39,16 @@ const templates: Record<string, TemplateConfig> = {
  * variantRegistry.hero.minimal = MinimalHero
  * // then in site.json: { "components": { "hero": "minimal" } }
  */
-export const variantRegistry: Record<string, Record<string, React.ComponentType<any>>> = {}
+export const variantRegistry: VariantRegistry = {}
 for (const template of Object.values(templates)) {
-  for (const [slotName, component] of Object.entries(template.slots)) {
-    variantRegistry[slotName] ??= {}
-    variantRegistry[slotName][template.id] = component
+  const registerSlot = <K extends SlotName>(slotName: K) => {
+    const variants: Record<string, ComponentSlots[K]> = variantRegistry[slotName] ?? {}
+    variants[template.id] = template.slots[slotName]
+    // The map and component share the same slot key K.
+    variantRegistry[slotName] = variants as VariantRegistry[K]
+  }
+  for (const slotName of Object.keys(template.slots) as SlotName[]) {
+    registerSlot(slotName)
   }
 }
 
@@ -84,7 +89,7 @@ export function getTemplates(): TemplateConfig[] {
 
 /** List all variant ids available for a given slot */
 export function getSlotVariants(slotName: string): string[] {
-  return Object.keys(variantRegistry[slotName] ?? {})
+  return Object.keys(variantRegistry[slotName as SlotName] ?? {})
 }
 
 export type { TemplateConfig, TemplatePages, LayoutProps } from './types'
