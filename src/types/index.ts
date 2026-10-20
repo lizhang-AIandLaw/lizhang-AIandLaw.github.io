@@ -91,6 +91,7 @@ export interface JourneyPhase {
 
 export interface About {
   journey: string
+  journeyHtml?: string
   journeyPhases?: JourneyPhase[]
   mentorship?: {
     heading: string

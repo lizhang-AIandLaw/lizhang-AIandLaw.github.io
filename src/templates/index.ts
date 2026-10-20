@@ -19,10 +19,12 @@ import type { TemplateConfig } from './types'
 import type { ComponentSlots } from './slots'
 import { resolveSlots } from './context'
 import terminalTemplate from './terminal'
+import academicTemplate from './academic'
 
 /** All registered templates keyed by id */
 const templates: Record<string, TemplateConfig> = {
   terminal: terminalTemplate,
+  academic: academicTemplate,
 }
 
 /**
@@ -37,12 +39,13 @@ const templates: Record<string, TemplateConfig> = {
  * variantRegistry.hero.minimal = MinimalHero
  * // then in site.json: { "components": { "hero": "minimal" } }
  */
-export const variantRegistry: Record<string, Record<string, React.ComponentType<any>>> = Object.fromEntries(
-  Object.entries(terminalTemplate.slots).map(([slotName, component]) => [
-    slotName,
-    { terminal: component },
-  ])
-)
+export const variantRegistry: Record<string, Record<string, React.ComponentType<any>>> = {}
+for (const template of Object.values(templates)) {
+  for (const [slotName, component] of Object.entries(template.slots)) {
+    variantRegistry[slotName] ??= {}
+    variantRegistry[slotName][template.id] = component
+  }
+}
 
 
 /** Default template id when none is specified in site.json */

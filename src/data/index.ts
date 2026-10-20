@@ -73,7 +73,7 @@ function mdToAbout(raw: Record<string, unknown>): About {
   const { _body, ...rest } = raw
   const bodyStr = (_body as string) || ''
   const journey = bodyStr.replace(/<[^>]+>/g, '').trim()
-  return { journey, ...rest } as unknown as About
+  return { journey, journeyHtml: bodyStr, ...rest } as unknown as About
 }
 
 // ── JSON imports (both languages) ──
@@ -102,7 +102,7 @@ const enData = {
   projects: collectMd(projectMdsEn).map(mdToProject),
   articles: collectMd(articleMdsEn).map(mdToProject),
   publications: collectMd(publicationMdsEn).map(mdToPublication),
-  about: mdToAbout(Object.values(aboutMdEn)[0]?.default ?? {}),
+  about: mdToAbout(collectMd(aboutMdEn)[0] ?? {}),
   research: researchJsonEn as Research,
   experience: { ...experienceJsonEn, professional: [], academic: [] } as Experience,
   experienceTimeline: experienceJsonEn.timeline as ExperienceEntry[],
@@ -118,7 +118,7 @@ const zhData = {
   projects: collectMd(projectMdsZh).map(mdToProject),
   articles: collectMd(articleMdsZh).map(mdToProject),
   publications: collectMd(publicationMdsZh).map(mdToPublication),
-  about: mdToAbout(Object.values(aboutMdZh)[0]?.default ?? {}),
+  about: mdToAbout(collectMd(aboutMdZh)[0] ?? {}),
   research: researchJsonZh as Research,
   experience: { ...experienceJsonZh, professional: [], academic: [] } as Experience,
   experienceTimeline: experienceJsonZh.timeline as ExperienceEntry[],

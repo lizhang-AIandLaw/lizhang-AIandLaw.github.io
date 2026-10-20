@@ -1,7 +1,7 @@
 {
   "_comment": "Li Zhang's academic homepage - TermHub style",
 
-  "template": "terminal",
+  "template": "academic",
   "components": {},
   "sections": [
     "hero", "bio", "newsDisplay", "selectedPublications",
