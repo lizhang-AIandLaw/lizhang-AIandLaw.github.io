@@ -26,6 +26,7 @@ import MentorshipSection from '../../components/sections/MentorshipSection'
 import SelectedPublicationsSection from '../../components/sections/SelectedPublicationsSection'
 import TalksSection from '../../components/sections/TalksSection'
 import TeachingSection from '../../components/sections/TeachingSection'
+import ServiceSection from '../../components/sections/ServiceSection'
 import ContactSection from '../../components/sections/ContactSection'
 
 const terminalTemplate: TemplateConfig = {
@@ -56,6 +57,7 @@ const terminalTemplate: TemplateConfig = {
     selectedPublications: SelectedPublicationsSection,
     talks: TalksSection,
     teaching: TeachingSection,
+    service: ServiceSection,
     contact: ContactSection,
   },
 }

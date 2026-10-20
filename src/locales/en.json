@@ -32,6 +32,11 @@
     "awardsSpanning": "awards spanning",
     "categories": "categories"
   },
+  "service": {
+    "title": "Service",
+    "conferences": "Conferences & Workshops",
+    "journals": "Journals"
+  },
   "hero": {
     "greeting": "Hi there, I'm",
     "sometimesI": "Sometimes I"

@@ -1,0 +1,15 @@
+{
+  "conferences": [
+    "ACL Rolling Review (ARR)",
+    "ICLR",
+    "AI for Law @ ICML",
+    "DMAIL @ IEEE BigData",
+    "ASAIL @ ICAIL"
+  ],
+  "journals": [
+    "Artificial Intelligence and Law",
+    "Frontiers of Computer Science",
+    "Information Processing and Management",
+    "Journal of Computational Intelligence and Information Technology (JCIIT)"
+  ]
+}

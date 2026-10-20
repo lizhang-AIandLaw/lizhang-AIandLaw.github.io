@@ -41,6 +41,7 @@ export interface MentorshipSlotProps {}
 export interface SelectedPublicationsSlotProps {}
 export interface TalksSlotProps {}
 export interface TeachingSlotProps {}
+export interface ServiceSlotProps {}
 export interface ContactSlotProps {}
 
 /* ── Slot map type ─────────────────────────────────────────── */
@@ -58,6 +59,7 @@ export interface ComponentSlots {
   selectedPublications: React.ComponentType<SelectedPublicationsSlotProps>
   talks: React.ComponentType<TalksSlotProps>
   teaching: React.ComponentType<TeachingSlotProps>
+  service: React.ComponentType<ServiceSlotProps>
   contact: React.ComponentType<ContactSlotProps>
 }
 
@@ -78,6 +80,7 @@ export const DEFAULT_SECTIONS: SlotName[] = [
   'talks',
   'teaching',
   'accomplishments',
+  'service',
   'contact',
   'footer',
 ]
@@ -86,5 +89,5 @@ export const DEFAULT_SECTIONS: SlotName[] = [
 export const SECTION_SLOTS: SlotName[] = [
   'hero', 'bio', 'skills', 'newsDisplay', 'selectedPublications',
   'journey', 'mentorship', 'talks', 'teaching', 'accomplishments',
-  'contact', 'footer',
+  'service', 'contact', 'footer',
 ]

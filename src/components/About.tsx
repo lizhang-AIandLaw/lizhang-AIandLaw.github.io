@@ -38,6 +38,7 @@ function About() {
   const Talks = useSlot('talks')
   const Teaching = useSlot('teaching')
   const Accomplishments = useSlot('accomplishments')
+  const Service = useSlot('service')
   const Contact = useSlot('contact')
 
   const renderSection = (sectionId: string, index: number) => {
@@ -89,6 +90,8 @@ function About() {
         return <Accomplishments key={key} />
       case 'contact':
         return <Contact key={key} />
+      case 'service':
+        return <Service key={key} />
       default:
         return null
     }

@@ -32,6 +32,11 @@
     "awardsSpanning": "个奖项，涵盖",
     "categories": "个类别"
   },
+  "service": {
+    "title": "学术服务",
+    "conferences": "会议与研讨会",
+    "journals": "期刊"
+  },
   "hero": {
     "greeting": "你好，我是",
     "sometimesI": "我有时会"
