@@ -32,7 +32,7 @@ authors:
   - Bing Zhao
   - Charles Clarke
   - Hu Wei
-venue: ACL 2026
+venue: ACL 2026 Main
 venueType: conference
 year: 2026
 status: accepted

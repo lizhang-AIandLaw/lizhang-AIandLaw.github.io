@@ -20,16 +20,13 @@ export function PublicationEntry({ publication: pub }: { publication: Publicatio
     { key: 'code', label: t('about.code') }, { key: 'dataset', label: t('about.dataset') },
     { key: 'projectPage', label: t('about.project') }, { key: 'demo', label: t('about.demo') },
   ]
-  const venueLabel = shortVenue(pub.venue)
   const mainLink = pub.links.paper || pub.links.arxiv || pub.links.projectPage
-  return <article className="academic-paper">
-    <div className="academic-paper-label">
-      <span className="academic-venue-tag">{venueLabel}</span>
-      <span className="academic-paper-year">{pub.year}</span>
-      {pub.featuredImage && <a href={assetUrl(pub.featuredImage)} target="_blank" rel="noreferrer">
+  return <article className={`academic-paper${pub.featuredImage ? ' academic-paper-with-image' : ''}`}>
+    {pub.featuredImage && <div className="academic-paper-label">
+      <a href={assetUrl(pub.featuredImage)} target="_blank" rel="noreferrer">
         <img src={assetUrl(pub.featuredImage)} alt={pub.title} loading="lazy" />
-      </a>}
-    </div>
+      </a>
+    </div>}
     <div className="academic-paper-body">
       <h3>{mainLink ? <a href={assetUrl(mainLink)} target="_blank" rel="noreferrer">{pub.title}</a> : pub.title}</h3>
       <p className="academic-authors" id={`authors-${pub.id}`}>

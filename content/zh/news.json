@@ -5,7 +5,7 @@
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
     "title": "DLawBench accepted to EMNLP 2026 Main",
-    "description": "Our paper \"DLawBench: Evaluating LLMs Through Multi-Turn Legal Consultation\" has been accepted to the EMNLP 2026 main conference.",
+    "description": "A benchmark for multi-turn lawyer–client consultation.",
     "date": "2026 年 8 月",
     "sortDate": "2026-08-21",
     "links": [
@@ -18,8 +18,8 @@
     "badge": "Publication",
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
-    "title": "Paper accepted at ICAIL 2026",
-    "description": "Our paper \"Retrieval-Based Multi-Label Legal Annotation: Extensible, Data-Efficient and Hallucination-Free\" has been accepted to ICAIL 2026.",
+    "title": "Retrieval-based legal annotation accepted to ICAIL 2026",
+    "description": "Extensible, data-efficient legal annotation using retrieval.",
     "date": "2026 年 5 月",
     "sortDate": "2026-05-16",
     "links": [
@@ -32,7 +32,7 @@
     "icon": "FaBriefcase",
     "iconColor": "green.400",
     "title": "Started applied research internship at Thomson Reuters Labs",
-    "description": "I joined Thomson Reuters Labs as an Applied Research Intern from May 1 to August 31, 2026, working on AI agents, long-term memory, and legal technology applications.",
+    "description": "Research on legal agents, May–August 2026.",
     "date": "2026 年 5 月",
     "sortDate": "2026-05-01",
     "links": [
@@ -45,7 +45,7 @@
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
     "title": "PLawBench accepted to ACL 2026 Main",
-    "description": "Our paper \"PLawBench: A Rubric-Based Benchmark for Evaluating LLMs in Real-World Legal Practice\" has been accepted to the ACL 2026 main conference.",
+    "description": "Rubric-based evaluation of real-world legal practice.",
     "date": "Apr 2026",
     "sortDate": "2026-04-06",
     "links": [
@@ -58,7 +58,7 @@
     "icon": "FaTrophy",
     "iconColor": "yellow.400",
     "title": "JURIX 2025 Best Student Paper Award",
-    "description": "Our JURIX 2025 paper \"Do LLMs Truly Understand When a Precedent Is Overruled?\" received the Best Student Paper Award.",
+    "description": "For “Do LLMs Truly Understand When a Precedent Is Overruled?”",
     "date": "Dec 2025",
     "sortDate": "2025-12-15",
     "links": [
@@ -71,7 +71,7 @@
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
     "title": "Paper accepted at CS&Law 2026",
-    "description": "Our paper \"Thinking Longer, Not Always Smarter: Evaluating LLM Capabilities in Hierarchical Legal Reasoning\" is accepted by CS&Law 2026.",
+    "description": "“Thinking Longer, Not Always Smarter: Evaluating LLM Capabilities in Hierarchical Legal Reasoning.”",
     "date": "Dec 2025",
     "sortDate": "2025-12-01",
     "links": [
@@ -97,7 +97,7 @@
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
     "title": "Paper accepted at JURIX 2025",
-    "description": "Our paper \"Do LLMs Truly Understand When a Precedent Is Overruled?\" is accepted by JURIX 2025.",
+    "description": "“Do LLMs Truly Understand When a Precedent Is Overruled?”",
     "date": "Oct 2025",
     "sortDate": "2025-10-15",
     "links": [
@@ -123,7 +123,7 @@
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
     "title": "Paper published at ICAIL 2025",
-    "description": "Our paper \"Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation\" appears at ICAIL 2025.",
+    "description": "“Mitigating Manipulation and Enhancing Persuasion: A Reflective Multi-Agent Approach for Legal Argument Generation.”",
     "date": "Jun 2025",
     "sortDate": "2025-06-01",
     "links": [

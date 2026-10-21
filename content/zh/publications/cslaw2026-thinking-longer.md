@@ -7,7 +7,6 @@ venueType: conference
 year: 2026
 status: accepted
 isFirstAuthor: true
-specialBadges: ["First Author"]
 keywords: [Hierarchical Legal Reasoning, Reasoning LLMs, AI and Law]
 links:
   paper: "https://thinking-longer-thinking-smarter.vercel.app"

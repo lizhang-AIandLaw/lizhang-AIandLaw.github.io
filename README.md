@@ -3,6 +3,8 @@ SPDX-FileCopyrightText: 2026 Yaoyao(Freax) Qian <limyoonaxi@gmail.com>
 SPDX-License-Identifier: GPL-3.0-only
 -->
 
+> **Li Zhang 主页维护：** 添加内容、调整排版或发布前，请阅读 [主页内容与排版规范](CONTENT_GUIDE.md)。后续规则直接在该文件修改。下方保留原模板文档。
+
 <p align="right">
   <a href="README.md">English</a> | <a href="README_CN.md">中文</a>
 </p>

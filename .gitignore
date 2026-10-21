@@ -24,3 +24,6 @@ dist-ssr
 *.sln
 *.sw?
 /en
+
+# Local visual review captures
+/design/typography-preview/*.png

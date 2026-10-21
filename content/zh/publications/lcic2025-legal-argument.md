@@ -7,7 +7,6 @@ venueType: conference
 year: 2025
 status: published
 isFirstAuthor: true
-specialBadges: ["First Author"]
 keywords: [Legal Argument Generation, Multi-Agent Systems, Trustworthy AI]
 links:
   paper: "https://lizhang-aiandlaw.github.io/A-Reflective-Multi-Agent-Approach-for-Legal-Argument-Generation/"

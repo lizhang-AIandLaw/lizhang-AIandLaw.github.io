@@ -5,7 +5,7 @@
   "components": {},
   "sections": [
     "hero", "bio", "newsDisplay", "selectedPublications",
-    "journey", "accomplishments", "service", "contact", "footer"
+    "accomplishments", "service", "footer"
   ],
 
   "name": {

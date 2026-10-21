@@ -8,7 +8,6 @@ year: 2026
 month: May
 status: accepted
 isFirstAuthor: true
-specialBadges: ["First Author"]
 keywords: [Legal Annotation, Retrieval, Multi-Label Classification]
 links:
   arxiv: "https://arxiv.org/abs/2605.16767"

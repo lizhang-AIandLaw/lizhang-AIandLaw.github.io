@@ -19,6 +19,8 @@ export function Profile({ avatar }: HeroSlotProps) {
   const { siteConfig, experience, experienceTimeline } = useLocalizedData()
   const education = experience.education.courses[0]
   const currentResearch = experienceTimeline.find(item => item.isCurrent && item.category === 'research')
+  const address = siteConfig.contact.address || siteConfig.contact.location
+  const addressBreak = siteConfig.contact.address ? address.indexOf(',') : -1
   return (
     <div className="academic-profile">
       <img className="academic-avatar" src={assetUrl(avatar.startsWith('/') || /^https?:/.test(avatar) ? avatar : `images/${avatar}`)} alt={siteConfig.name.display} width="168" height="168" />
@@ -28,7 +30,7 @@ export function Profile({ avatar }: HeroSlotProps) {
         <p className="academic-institution">{education.institution}</p>
       </div>}
       <div className="academic-profile-links">
-        {siteConfig.contact.location && <span><FaMapMarkerAlt aria-hidden="true" />{siteConfig.contact.location}</span>}
+        {address && <span className="academic-profile-address"><FaMapMarkerAlt aria-hidden="true" /><span className="academic-address-text">{addressBreak >= 0 ? <>{address.slice(0, addressBreak)}<br />{address.slice(addressBreak + 1).trim()}</> : address}</span></span>}
         {siteConfig.contact.email && <a href={`mailto:${siteConfig.contact.email}`}><FaEnvelope aria-hidden="true" />{siteConfig.contact.email}</a>}
         {siteConfig.heroSocialIcons.map(item => {
           const href = (siteConfig.social as Record<string, string>)[item.platform]
@@ -44,25 +46,26 @@ export function Profile({ avatar }: HeroSlotProps) {
 
 export function Navigation() {
   const { t } = useTranslation()
-  const { siteConfig } = useLocalizedData()
   return <header className="academic-header">
     <nav aria-label={t('nav.navigation')}>
       {navItems.map(item => <NavLink key={item.path} to={item.path} end={item.path === '/'}>{t(item.labelKey)}</NavLink>)}
-      {siteConfig.social.cv && <a href={assetUrl(siteConfig.social.cv)} target="_blank" rel="noreferrer">CV <span aria-hidden="true">↗</span></a>}
     </nav>
+    <AppearanceSwitch />
   </header>
 }
 
-export function Footer() {
+function AppearanceSwitch() {
   const { t } = useTranslation()
-  const { siteConfig } = useLocalizedData()
   const { appearance, setAppearance } = useContext(AppearanceContext)
-  return <footer className="academic-footer"><span>© {new Date().getFullYear()} {siteConfig.name.display}</span>
-    <div className="academic-appearance" role="group" aria-label={t('academic.appearance')}>
-      {([{ mode: 'light', Icon: FaSun }, { mode: 'dark', Icon: FaMoon }, { mode: 'system', Icon: FaDesktop }] as const).map(({ mode, Icon }) =>
-        <button key={mode} type="button" aria-label={t(`academic.${mode}Mode`)} title={t(`academic.${mode}Mode`)} aria-pressed={appearance === mode} onClick={() => setAppearance(mode)}><Icon aria-hidden="true" /></button>)}
-    </div>
-  </footer>
+  return <div className="academic-appearance" role="group" aria-label={t('academic.appearance')}>
+    {([{ mode: 'light', Icon: FaSun }, { mode: 'dark', Icon: FaMoon }, { mode: 'system', Icon: FaDesktop }] as const).map(({ mode, Icon }) =>
+      <button key={mode} type="button" aria-label={t(`academic.${mode}Mode`)} title={t(`academic.${mode}Mode`)} aria-pressed={appearance === mode} onClick={() => setAppearance(mode)}><Icon aria-hidden="true" /></button>)}
+  </div>
+}
+
+export function Footer() {
+  const { siteConfig } = useLocalizedData()
+  return <footer className="academic-footer"><span>© {new Date().getFullYear()} {siteConfig.name.display}</span></footer>
 }
 
 export default function Layout({ children }: LayoutProps) {

@@ -27,7 +27,6 @@ month: August
 sortOrder: 1
 status: accepted
 isFirstAuthor: true
-specialBadges: ["First Author"]
 keywords: [Legal Consultation, Legal Sycophancy, LLM Evaluation, Multi-Turn Dialogue]
 links:
   arxiv: "https://arxiv.org/abs/2606.13931"

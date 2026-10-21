@@ -47,7 +47,7 @@ version:
 
 I am a Ph.D. student in Intelligent Systems at the [University of Pittsburgh](https://www.pitt.edu/), advised by [Prof. Kevin Ashley](https://www.law.pitt.edu/people/kevin-d-ashley). In Summer 2026, I was an Applied Research Intern at Thomson Reuters Labs, working on legal agents.
 
-Before my Ph.D., I worked as a Legal Counselor at [The Export-Import Bank of China](https://www.eximbank.gov.cn/), focusing on cross-border financing, banking transactions, and regulatory compliance. I hold a Master of  Law from [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm) and a Bachelor of Electrical Engineering from [China University of Mining and Technology](https://global.cumt.edu.cn/), and studied abroad at the [Australian National University](https://www.anu.edu.au/).
+I hold a Master of Law from [Tsinghua University](https://www.tsinghua.edu.cn/en/index.htm) and a Bachelor of Electrical Engineering from [China University of Mining and Technology](https://global.cumt.edu.cn/), and studied abroad at the [Australian National University](https://www.anu.edu.au/).
 
 My research focuses on **legal intelligence**: building LLM agents that can handle real-world, high-stakes legal work. I pursue this along two lines:
 

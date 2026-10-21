@@ -7,7 +7,7 @@ venueType: conference
 year: 2025
 status: published
 isFirstAuthor: true
-specialBadges: ["First Author", "Best Student Paper"]
+specialBadges: ["Best Student Paper"]
 keywords: [Precedent Overruling, Legal Reasoning, Benchmarking]
 links:
   paper: "https://ebooks.iospress.nl/volumearticle/76899"

@@ -7,7 +7,6 @@ venueType: conference
 year: 2025
 status: published
 isFirstAuthor: true
-specialBadges: ["First Author"]
 keywords: [Faithfulness, Abstention, Case-Based Legal Arguments]
 links:
   paper: "https://lizhang-aiandlaw.github.io/An-Automated-Pipeline-for-Evaluating-LLM-Generated-3-ply-Case-Based-Legal-Arguments/"
