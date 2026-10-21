@@ -51,7 +51,7 @@
 
 - 直接写研究对象、方法与任务，避免空泛的个人成长叙述。
 - 不恢复已删除的银行 Legal Counselor 工作经历句；该经历留在 Experience 页。
-- Thomson Reuters 简介使用用户确认的 `working on legal agents`；不要自行恢复 About 中的 long-term memory 长版本。
+- Thomson Reuters 简介使用用户确认的 `In Summer 2026, I interned at Thomson Reuters Labs on legal agents.`；不要自行恢复 About 中的 long-term memory 长版本。
 - 段落之间一个空行。只加粗研究核心概念和方向标题，不整段加粗。
 - 链接写成 `[有意义的名称](完整 URL)`，不要直接展示很长的网址。
 - 每一条研究方向之间留出清晰间距；不要把完整论文作者、发表信息复制进 About。
