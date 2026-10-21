@@ -314,3 +314,11 @@
 @media (max-width: 380px) {
   .academic-site .academic-header nav { gap: 14px; }
 }
+
+/* Desktop content width: 90% of the approved large-type layout. */
+@media screen and (min-width: 1024px) {
+  .academic-site .academic-shell { width: min(1080px, calc(90% - 86.4px)); }
+}
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+  .academic-site .academic-shell { width: calc(90% - 57.6px); }
+}
