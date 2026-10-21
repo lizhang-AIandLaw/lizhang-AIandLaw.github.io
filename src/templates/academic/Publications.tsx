@@ -54,7 +54,6 @@ export function PublicationEntry({ publication: pub }: { publication: Publicatio
       </div>
       {pub.abstract && <div className="academic-abstract" id={`abstract-${pub.id}`} hidden={!expanded}>
         <p>{pub.abstract}</p>
-        {pub.keywords?.length ? <p className="academic-keywords">{pub.keywords.join(' · ')}</p> : null}
       </div>}
     </div>
   </article>

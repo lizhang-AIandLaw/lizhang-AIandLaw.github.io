@@ -61,7 +61,6 @@ export function Journey() {
     <div className="academic-entries">{phases.map((phase, index) => <details className="academic-entry" key={`${phase.title}-${index}`}>
       <summary><span className="academic-date">{phase.period}</span><span><strong>{phase.title}</strong><span className="academic-entry-org">{phase.org}</span></span></summary>
       <p><BoldText text={phase.description} /></p>
-      {phase.tags?.length ? <p className="academic-keywords">{phase.tags.join(' · ')}</p> : null}
     </details>)}</div>
   </Section>
 }

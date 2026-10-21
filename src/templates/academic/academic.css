@@ -97,7 +97,6 @@
 .academic-paper-actions :is(a, button) { display: inline-block; font-size: 11px; line-height: 1.5; padding: 3px 9px; border: 1px solid var(--academic-border); border-radius: 3px; color: var(--academic-secondary); background: var(--academic-bg); }
 .academic-paper-actions :is(a, button):hover, .academic-paper-actions button[aria-expanded="true"] { border-color: var(--academic-accent); color: var(--academic-accent); background: var(--academic-soft); text-decoration: none; }
 .academic-abstract { margin-top: 14px; padding: 12px 15px; background: var(--academic-soft); border-left: 2px solid var(--academic-accent); font-size: 12px; line-height: 1.8; }
-.academic-keywords { font-size: 11px; color: var(--academic-muted); margin-top: 8px; }
 .academic-entries { display: grid; gap: 16px; }
 .academic-entry summary { display: grid; grid-template-columns: 125px minmax(0, 1fr); gap: 20px; list-style: none; font-size: 13px; }
 .academic-entry summary::-webkit-details-marker { display: none; }

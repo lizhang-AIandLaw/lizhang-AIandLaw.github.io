@@ -51,7 +51,6 @@ function Collection({ kind }: { kind: 'projects' | 'articles' }) {
     <h3>{item.link ? <a href={assetUrl(item.link)}>{item.title}</a> : item.title}</h3>
     <p>{item.summary}</p>
     {item.highlights?.length ? <ul>{item.highlights.map(highlight => <li key={highlight}>{highlight}</li>)}</ul> : null}
-    <p className="academic-keywords">{item.tags.join(' · ')}</p>
     <div className="academic-text-links">{item.extraLinks?.map(link => <a key={link.url} href={assetUrl(link.url)}>{link.label}</a>)}</div>
   </article>)}</div></Section>
 }
