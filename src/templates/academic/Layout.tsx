@@ -16,7 +16,7 @@ type Appearance = 'light' | 'dark' | 'system'
 const AppearanceContext = createContext<{ appearance: Appearance; setAppearance: (value: Appearance) => void }>({ appearance: 'light', setAppearance: () => {} })
 
 export function Profile({ avatar }: HeroSlotProps) {
-  const { siteConfig, experience, experienceTimeline, research } = useLocalizedData()
+  const { siteConfig, experience, experienceTimeline } = useLocalizedData()
   const education = experience.education.courses[0]
   const currentResearch = experienceTimeline.find(item => item.isCurrent && item.category === 'research')
   return (
@@ -27,7 +27,6 @@ export function Profile({ avatar }: HeroSlotProps) {
         <p>{currentResearch?.title ?? education.course}</p>
         <p className="academic-institution">{education.institution}</p>
       </div>}
-      {research.currentResearch.map(item => <p className="academic-focus" key={item.lab}>{item.focus}</p>)}
       <div className="academic-profile-links">
         {siteConfig.contact.location && <span><FaMapMarkerAlt aria-hidden="true" />{siteConfig.contact.location}</span>}
         {siteConfig.contact.email && <a href={`mailto:${siteConfig.contact.email}`}><FaEnvelope aria-hidden="true" />{siteConfig.contact.email}</a>}

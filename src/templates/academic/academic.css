@@ -50,7 +50,6 @@
 .academic-profile h1 { font-size: 36px; line-height: 1.2; margin-bottom: 15px; }
 .academic-affiliation { font-size: 14px; line-height: 1.65; }
 .academic-institution { font-weight: 600; margin-top: 6px; color: var(--academic-accent); }
-.academic-focus { color: var(--academic-muted); font-size: 13px; line-height: 1.75; margin-top: 18px; }
 .academic-profile-links { display: flex; flex-direction: column; gap: 10px; margin: 25px 0 22px; font-size: 13px; }
 .academic-profile-links :is(a, span) { display: flex; align-items: center; gap: 10px; color: var(--academic-secondary); }
 .academic-profile-links svg { color: var(--academic-muted); flex-shrink: 0; width: 14px; }
@@ -186,7 +185,6 @@
   .academic-profile h1 { grid-column: 2; font-size: 30px; margin-bottom: 7px; }
   .academic-affiliation { grid-column: 2; font-size: 12px; }
   .academic-profile-links { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; gap: 10px 20px; margin: 18px 0; }
-  .academic-focus { grid-column: 1 / -1; max-width: 400px; margin-top: 16px; }
   .academic-cv { grid-column: 1 / -1; justify-self: start; }
   .academic-section { margin-bottom: 38px; }
   .academic-section-heading h2 { font-size: 22px; }
