@@ -4,6 +4,20 @@
     "badge": "Publication",
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
+    "title": "Where Do Legal Factors Live in LLMs? accepted to JURIX 2026",
+    "description": "Connecting symbolic legal knowledge with learned representations: linear probes and sparse auto-encoders locate CATO factors within three open language models.",
+    "date": "Oct 2026",
+    "sortDate": "2026-10",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/abs/2610.28799v1", "icon": "FaFilePdf" },
+      { "text": "Code & Data", "url": "https://github.com/lizhang-AIandLaw/FactorScope-LLM", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
     "title": "DLawBench accepted to EMNLP 2026 Main",
     "description": "A benchmark for multi-turn lawyer–client consultation.",
     "date": "Aug 2026",

@@ -85,5 +85,5 @@
     { "platform": "linkedin", "icon": "FaLinkedin", "label": "LinkedIn", "color": "#0077B5" }
   ],
 
-  "selectedPublicationIds": ["dlawbench-legal-consultation", "icml2026-densemixer", "acl2026-plawbench", "icail2026-retrieval-legal-annotation", "jurix2025-overruled", "cslaw2026-thinking-longer"]
+  "selectedPublicationIds": ["jurix2026-legal-factors", "dlawbench-legal-consultation", "icml2026-densemixer", "acl2026-plawbench", "icail2026-retrieval-legal-annotation", "jurix2025-overruled"]
 }

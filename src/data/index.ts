@@ -65,7 +65,10 @@ function mdToProject(raw: Record<string, unknown>): ProjectItem {
 function mdToPublication(raw: Record<string, unknown>): Publication {
   const { _body, ...rest } = raw
   const bodyStr = (_body as string) || ''
-  const abstract = bodyStr.replace(/<[^>]+>/g, '').trim()
+  // Decode Markdown's HTML escapes after stripping tags for React text rendering.
+  const entities: Record<string, string> = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'" }
+  const abstract = bodyStr.replace(/<[^>]+>/g, '')
+    .replace(/&(?:amp|lt|gt|quot|#39);/g, entity => entities[entity]).trim()
   return { abstract, ...rest } as unknown as Publication
 }
 
